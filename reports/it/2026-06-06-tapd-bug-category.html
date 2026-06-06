@@ -53,32 +53,32 @@
 <div class="header">
   <div class="container">
     <h1>冷丰ERP2026 缺陷处理分析报告</h1>
-    <p>数据截至：2026-06-06 | Bug总数：768 | 报告生成时间：2026-06-06 16:32</p>
+    <p>数据截至：2026-06-06 | Bug总数：781 | 报告生成时间：2026-06-06 18:01</p>
   </div>
 </div>
 <div class="container">
 <div class="kpi-row">
-  <div class="kpi-card info"><div class="value">768</div><div class="label">Bug 总数</div></div>
-  <div class="kpi-card danger"><div class="value">310</div><div class="label">待确认 (积压)</div></div>
-  <div class="kpi-card warning"><div class="value">40.4%</div><div class="label">待确认占比</div></div>
-  <div class="kpi-card success"><div class="value">488</div><div class="label">已完结</div></div>
-  <div class="kpi-card danger"><div class="value">51</div><div class="label">高优先级未关闭</div></div>
-  <div class="kpi-card warning"><div class="value">73</div><div class="label">未分配处理人</div></div>
-  <div class="kpi-card danger"><div class="value">14</div><div class="label">致命级未关闭</div></div>
+  <div class="kpi-card info"><div class="value">781</div><div class="label">Bug 总数</div></div>
+  <div class="kpi-card danger"><div class="value">289</div><div class="label">待确认 (积压)</div></div>
+  <div class="kpi-card warning"><div class="value">37.0%</div><div class="label">待确认占比</div></div>
+  <div class="kpi-card success"><div class="value">573</div><div class="label">已完结</div></div>
+  <div class="kpi-card danger"><div class="value">40</div><div class="label">高优先级未关闭</div></div>
+  <div class="kpi-card warning"><div class="value">74</div><div class="label">未分配处理人</div></div>
+  <div class="kpi-card danger"><div class="value">11</div><div class="label">致命级未关闭</div></div>
 </div>
 <div class="section">
   <h2>核心发现与风险预警</h2>
   <div class="insight-box">
-    <h4>严重积压：40.4% 的 Bug 停留在「待确认」状态</h4>
-    <p>310 个 Bug 处于待确认状态，其中 231 个已积压超过 7 天、110 个超过 30 天仍未确认。确认环节是当前流程的最大瓶颈，建议立即组织集中确认会议。</p>
+    <h4>严重积压：37.0% 的 Bug 停留在「待确认」状态</h4>
+    <p>289 个 Bug 处于待确认状态，其中 211 个已积压超过 7 天、110 个超过 30 天仍未确认。确认环节是当前流程的最大瓶颈，建议立即组织集中确认会议。</p>
   </div>
   <div class="insight-box">
     <h4>处理人负载严重不均</h4>
-    <p>尤威（126个）和张玄玄（41个）两人承载了大量 Bug，但完结率分别仅 3.2% 和 14.6%。而牛盼盼完结率高达 52.7%、肖星星 50.0%。建议重新分配部分 Bug 给高完结率的处理人。</p>
+    <p>尤威（121个）和彭湘豫（42个）两人承载了大量 Bug，但完结率分别仅 4.1% 和 7.1%。而吴迪完结率高达 100.0%、牛盼盼 65.2%。建议重新分配部分 Bug 给高完结率的处理人。</p>
   </div>
   <div class="insight-box warn">
-    <h4>PC-营销模块是重灾区</h4>
-    <p>PC-营销模块累计 21 个 Bug、完结率仅 33.3%，其中 10 个待确认。该模块可能存在系统性质量问题或需求对齐不足。</p>
+    <h4>MDM-商品中心模块是重灾区</h4>
+    <p>MDM-商品中心模块累计 16 个 Bug、完结率仅 31.2%，其中 10 个待确认。该模块可能存在系统性质量问题或需求对齐不足。</p>
   </div>
 </div>
 <div class="chart-row">
@@ -95,74 +95,74 @@
   <table>
     <thead><tr><th>处理人</th><th>总数</th><th>已关闭</th><th>已解决</th><th>待确认</th><th>处理中</th><th>待测试</th><th>未解决</th><th>已拒绝</th><th>完结率</th><th>进度</th><th>高优/紧急</th><th>严重/致命</th><th>均耗时(h)</th></tr></thead>
     <tbody><tr>
-            <td><b>牛盼盼</b></td><td>131</td><td>69</td><td>0</td>
-            <td>15</td><td>0</td><td>31</td>
-            <td>15</td><td>1</td><td>52.7%</td>
-            <td><div class="progress-bar"><div class="fill" style="width:52.7%;background:#f77f00;"></div></div></td>
-            <td>21</td><td>17</td><td>345.5</td>
+            <td><b>牛盼盼</b></td><td>138</td><td>90</td><td>0</td>
+            <td>23</td><td>0</td><td>6</td>
+            <td>18</td><td>1</td><td>65.2%</td>
+            <td><div class="progress-bar"><div class="fill" style="width:65.2%;background:#f77f00;"></div></div></td>
+            <td>23</td><td>18</td><td>364.9</td>
         </tr>
 <tr>
-            <td><b>尤威</b></td><td>126</td><td>4</td><td>0</td>
-            <td>86</td><td>0</td><td>5</td>
-            <td>27</td><td>4</td><td>3.2%</td>
-            <td><div class="progress-bar"><div class="fill" style="width:3.2%;background:#e63946;"></div></div></td>
-            <td>16</td><td>17</td><td>288.6</td>
+            <td><b>尤威</b></td><td>121</td><td>5</td><td>0</td>
+            <td>79</td><td>0</td><td>6</td>
+            <td>27</td><td>4</td><td>4.1%</td>
+            <td><div class="progress-bar"><div class="fill" style="width:4.1%;background:#e63946;"></div></div></td>
+            <td>15</td><td>16</td><td>284.1</td>
         </tr>
 <tr>
-            <td><b>代文希</b></td><td>109</td><td>47</td><td>0</td>
-            <td>54</td><td>0</td><td>2</td>
-            <td>4</td><td>2</td><td>43.1%</td>
-            <td><div class="progress-bar"><div class="fill" style="width:43.1%;background:#f77f00;"></div></div></td>
-            <td>42</td><td>26</td><td>296.3</td>
+            <td><b>史书钰</b></td><td>120</td><td>53</td><td>0</td>
+            <td>5</td><td>0</td><td>17</td>
+            <td>40</td><td>5</td><td>44.2%</td>
+            <td><div class="progress-bar"><div class="fill" style="width:44.2%;background:#f77f00;"></div></div></td>
+            <td>29</td><td>20</td><td>165.2</td>
         </tr>
 <tr>
-            <td><b>史书钰</b></td><td>108</td><td>49</td><td>0</td>
-            <td>1</td><td>0</td><td>18</td>
-            <td>35</td><td>5</td><td>45.4%</td>
-            <td><div class="progress-bar"><div class="fill" style="width:45.4%;background:#f77f00;"></div></div></td>
-            <td>27</td><td>17</td><td>169.6</td>
+            <td><b>代文希</b></td><td>108</td><td>52</td><td>0</td>
+            <td>48</td><td>0</td><td>2</td>
+            <td>4</td><td>2</td><td>48.1%</td>
+            <td><div class="progress-bar"><div class="fill" style="width:48.1%;background:#f77f00;"></div></div></td>
+            <td>42</td><td>26</td><td>325.8</td>
         </tr>
 <tr>
-            <td><b>张玄玄</b></td><td>41</td><td>6</td><td>0</td>
-            <td>4</td><td>0</td><td>4</td>
-            <td>26</td><td>1</td><td>14.6%</td>
-            <td><div class="progress-bar"><div class="fill" style="width:14.6%;background:#e63946;"></div></div></td>
-            <td>4</td><td>3</td><td>221.2</td>
+            <td><b>彭湘豫</b></td><td>42</td><td>3</td><td>0</td>
+            <td>24</td><td>0</td><td>10</td>
+            <td>4</td><td>1</td><td>7.1%</td>
+            <td><div class="progress-bar"><div class="fill" style="width:7.1%;background:#e63946;"></div></div></td>
+            <td>6</td><td>5</td><td>173.3</td>
         </tr>
 <tr>
-            <td><b>彭湘豫</b></td><td>37</td><td>3</td><td>0</td>
-            <td>24</td><td>0</td><td>5</td>
-            <td>4</td><td>1</td><td>8.1%</td>
-            <td><div class="progress-bar"><div class="fill" style="width:8.1%;background:#e63946;"></div></div></td>
-            <td>5</td><td>5</td><td>173.3</td>
+            <td><b>张玄玄</b></td><td>40</td><td>6</td><td>0</td>
+            <td>3</td><td>0</td><td>4</td>
+            <td>26</td><td>1</td><td>15.0%</td>
+            <td><div class="progress-bar"><div class="fill" style="width:15.0%;background:#e63946;"></div></div></td>
+            <td>3</td><td>2</td><td>221.2</td>
         </tr>
 <tr>
-            <td><b>吴丹萍</b></td><td>28</td><td>0</td><td>0</td>
-            <td>28</td><td>0</td><td>0</td>
-            <td>0</td><td>0</td><td>0.0%</td>
-            <td><div class="progress-bar"><div class="fill" style="width:0.0%;background:#e63946;"></div></div></td>
-            <td>2</td><td>3</td><td>0</td>
+            <td><b>符洪斌</b></td><td>27</td><td>2</td><td>0</td>
+            <td>25</td><td>0</td><td>0</td>
+            <td>0</td><td>0</td><td>7.4%</td>
+            <td><div class="progress-bar"><div class="fill" style="width:7.4%;background:#e63946;"></div></div></td>
+            <td>0</td><td>0</td><td>568.0</td>
         </tr>
 <tr>
-            <td><b>符洪斌</b></td><td>26</td><td>0</td><td>0</td>
-            <td>26</td><td>0</td><td>0</td>
-            <td>0</td><td>0</td><td>0.0%</td>
-            <td><div class="progress-bar"><div class="fill" style="width:0.0%;background:#e63946;"></div></div></td>
-            <td>0</td><td>0</td><td>0</td>
-        </tr>
-<tr>
-            <td><b>王茂林</b></td><td>21</td><td>1</td><td>0</td>
-            <td>13</td><td>0</td><td>2</td>
-            <td>4</td><td>1</td><td>4.8%</td>
-            <td><div class="progress-bar"><div class="fill" style="width:4.8%;background:#e63946;"></div></div></td>
-            <td>10</td><td>8</td><td>69.4</td>
-        </tr>
-<tr>
-            <td><b>汪其鹏</b></td><td>14</td><td>0</td><td>0</td>
+            <td><b>王茂林</b></td><td>22</td><td>2</td><td>0</td>
             <td>14</td><td>0</td><td>0</td>
-            <td>0</td><td>0</td><td>0.0%</td>
-            <td><div class="progress-bar"><div class="fill" style="width:0.0%;background:#e63946;"></div></div></td>
-            <td>0</td><td>0</td><td>0</td>
+            <td>5</td><td>1</td><td>9.1%</td>
+            <td><div class="progress-bar"><div class="fill" style="width:9.1%;background:#e63946;"></div></div></td>
+            <td>11</td><td>9</td><td>61.9</td>
+        </tr>
+<tr>
+            <td><b>吴丹萍</b></td><td>19</td><td>1</td><td>0</td>
+            <td>18</td><td>0</td><td>0</td>
+            <td>0</td><td>0</td><td>5.3%</td>
+            <td><div class="progress-bar"><div class="fill" style="width:5.3%;background:#e63946;"></div></div></td>
+            <td>1</td><td>2</td><td>194.6</td>
+        </tr>
+<tr>
+            <td><b>姚新宇</b></td><td>15</td><td>2</td><td>0</td>
+            <td>4</td><td>0</td><td>1</td>
+            <td>8</td><td>0</td><td>13.3%</td>
+            <td><div class="progress-bar"><div class="fill" style="width:13.3%;background:#e63946;"></div></div></td>
+            <td>4</td><td>4</td><td>165.2</td>
         </tr>
 <tr>
             <td><b>肖星星</b></td><td>14</td><td>7</td><td>0</td>
@@ -172,11 +172,11 @@
             <td>5</td><td>5</td><td>166.2</td>
         </tr>
 <tr>
-            <td><b>姚新宇</b></td><td>14</td><td>2</td><td>0</td>
-            <td>4</td><td>0</td><td>1</td>
-            <td>7</td><td>0</td><td>14.3%</td>
-            <td><div class="progress-bar"><div class="fill" style="width:14.3%;background:#e63946;"></div></div></td>
-            <td>3</td><td>3</td><td>150.8</td>
+            <td><b>柯希奎</b></td><td>12</td><td>3</td><td>0</td>
+            <td>8</td><td>0</td><td>0</td>
+            <td>0</td><td>1</td><td>25.0%</td>
+            <td><div class="progress-bar"><div class="fill" style="width:25.0%;background:#e63946;"></div></div></td>
+            <td>2</td><td>2</td><td>170.2</td>
         </tr>
 </tbody>
   </table>
@@ -184,8 +184,8 @@
   <div class="summary-box">
     <h4>处理人分析小结</h4>
     <ul>
-      <li><b>高效处理人：</b>牛盼盼（52.7%）、肖星星（50.0%）完结率最高</li>
-      <li><b>严重过载：</b>尤威（126个/3.2%完结）、张玄玄（41个/14.6%完结）积压严重</li>
+      <li><b>高效处理人：</b>吴迪（100.0%）、牛盼盼（65.2%）完结率最高</li>
+      <li><b>严重过载：</b>尤威（121个/4.1%完结）、彭湘豫（42个/7.1%完结）积压严重</li>
       <li><b>需关注：</b>低完结率处理人需要协助或资源支持</li>
     </ul>
   </div>
@@ -202,79 +202,73 @@
     <thead><tr><th>处理人</th><th>待确认</th><th>处理中</th><th>待测试</th><th>未解决</th><th>活跃合计</th><th>占比</th></tr></thead>
     <tbody><tr>
             <td><b>尤威</b></td>
-            <td style="color:#e63946;font-weight:700;">86</td><td>0</td><td>5</td><td>27</td>
-            <td><b>118</b></td>
+            <td style="color:#e63946;font-weight:700;">79</td><td>0</td><td>6</td><td>27</td>
+            <td><b>112</b></td>
             <td><div class="progress-bar" style="width:100px;"><div class="fill" style="width:100%;background:linear-gradient(90deg,#e63946 0%,#f77f00 50%,#457b9d 100%);"></div></div></td>
         </tr>
 <tr>
-            <td><b>牛盼盼</b></td>
-            <td style="color:#e63946;font-weight:700;">15</td><td>0</td><td>31</td><td>15</td>
-            <td><b>61</b></td>
-            <td><div class="progress-bar" style="width:100px;"><div class="fill" style="width:34%;background:linear-gradient(90deg,#e63946 0%,#f77f00 50%,#457b9d 100%);"></div></div></td>
+            <td><b>史书钰</b></td>
+            <td style="color:#f77f00;font-weight:600;">5</td><td>0</td><td>17</td><td>40</td>
+            <td><b>62</b></td>
+            <td><div class="progress-bar" style="width:100px;"><div class="fill" style="width:36%;background:linear-gradient(90deg,#e63946 0%,#f77f00 50%,#457b9d 100%);"></div></div></td>
         </tr>
 <tr>
             <td><b>代文希</b></td>
-            <td style="color:#e63946;font-weight:700;">54</td><td>0</td><td>2</td><td>4</td>
-            <td><b>60</b></td>
-            <td><div class="progress-bar" style="width:100px;"><div class="fill" style="width:25%;background:linear-gradient(90deg,#e63946 0%,#f77f00 50%,#457b9d 100%);"></div></div></td>
-        </tr>
-<tr>
-            <td><b>史书钰</b></td>
-            <td>1</td><td>0</td><td>18</td><td>35</td>
+            <td style="color:#e63946;font-weight:700;">48</td><td>0</td><td>2</td><td>4</td>
             <td><b>54</b></td>
-            <td><div class="progress-bar" style="width:100px;"><div class="fill" style="width:18%;background:linear-gradient(90deg,#e63946 0%,#f77f00 50%,#457b9d 100%);"></div></div></td>
+            <td><div class="progress-bar" style="width:100px;"><div class="fill" style="width:24%;background:linear-gradient(90deg,#e63946 0%,#f77f00 50%,#457b9d 100%);"></div></div></td>
         </tr>
 <tr>
-            <td><b>张玄玄</b></td>
-            <td>4</td><td>0</td><td>4</td><td>26</td>
-            <td><b>34</b></td>
-            <td><div class="progress-bar" style="width:100px;"><div class="fill" style="width:10%;background:linear-gradient(90deg,#e63946 0%,#f77f00 50%,#457b9d 100%);"></div></div></td>
+            <td><b>牛盼盼</b></td>
+            <td style="color:#e63946;font-weight:700;">23</td><td>0</td><td>6</td><td>18</td>
+            <td><b>47</b></td>
+            <td><div class="progress-bar" style="width:100px;"><div class="fill" style="width:17%;background:linear-gradient(90deg,#e63946 0%,#f77f00 50%,#457b9d 100%);"></div></div></td>
         </tr>
 <tr>
             <td><b>彭湘豫</b></td>
-            <td style="color:#e63946;font-weight:700;">24</td><td>0</td><td>5</td><td>4</td>
-            <td><b>33</b></td>
-            <td><div class="progress-bar" style="width:100px;"><div class="fill" style="width:9%;background:linear-gradient(90deg,#e63946 0%,#f77f00 50%,#457b9d 100%);"></div></div></td>
+            <td style="color:#e63946;font-weight:700;">24</td><td>0</td><td>10</td><td>4</td>
+            <td><b>38</b></td>
+            <td><div class="progress-bar" style="width:100px;"><div class="fill" style="width:12%;background:linear-gradient(90deg,#e63946 0%,#f77f00 50%,#457b9d 100%);"></div></div></td>
         </tr>
 <tr>
-            <td><b>吴丹萍</b></td>
-            <td style="color:#e63946;font-weight:700;">28</td><td>0</td><td>0</td><td>0</td>
-            <td><b>28</b></td>
-            <td><div class="progress-bar" style="width:100px;"><div class="fill" style="width:7%;background:linear-gradient(90deg,#e63946 0%,#f77f00 50%,#457b9d 100%);"></div></div></td>
+            <td><b>张玄玄</b></td>
+            <td>3</td><td>0</td><td>4</td><td>26</td>
+            <td><b>33</b></td>
+            <td><div class="progress-bar" style="width:100px;"><div class="fill" style="width:10%;background:linear-gradient(90deg,#e63946 0%,#f77f00 50%,#457b9d 100%);"></div></div></td>
         </tr>
 <tr>
             <td><b>符洪斌</b></td>
-            <td style="color:#e63946;font-weight:700;">26</td><td>0</td><td>0</td><td>0</td>
-            <td><b>26</b></td>
-            <td><div class="progress-bar" style="width:100px;"><div class="fill" style="width:6%;background:linear-gradient(90deg,#e63946 0%,#f77f00 50%,#457b9d 100%);"></div></div></td>
+            <td style="color:#e63946;font-weight:700;">25</td><td>0</td><td>0</td><td>0</td>
+            <td><b>25</b></td>
+            <td><div class="progress-bar" style="width:100px;"><div class="fill" style="width:7%;background:linear-gradient(90deg,#e63946 0%,#f77f00 50%,#457b9d 100%);"></div></div></td>
         </tr>
 <tr>
             <td><b>王茂林</b></td>
-            <td style="color:#e63946;font-weight:700;">13</td><td>0</td><td>2</td><td>4</td>
+            <td style="color:#e63946;font-weight:700;">14</td><td>0</td><td>0</td><td>5</td>
             <td><b>19</b></td>
+            <td><div class="progress-bar" style="width:100px;"><div class="fill" style="width:5%;background:linear-gradient(90deg,#e63946 0%,#f77f00 50%,#457b9d 100%);"></div></div></td>
+        </tr>
+<tr>
+            <td><b>吴丹萍</b></td>
+            <td style="color:#e63946;font-weight:700;">18</td><td>0</td><td>0</td><td>0</td>
+            <td><b>18</b></td>
             <td><div class="progress-bar" style="width:100px;"><div class="fill" style="width:4%;background:linear-gradient(90deg,#e63946 0%,#f77f00 50%,#457b9d 100%);"></div></div></td>
         </tr>
 <tr>
-            <td><b>汪其鹏</b></td>
-            <td style="color:#e63946;font-weight:700;">14</td><td>0</td><td>0</td><td>0</td>
-            <td><b>14</b></td>
-            <td><div class="progress-bar" style="width:100px;"><div class="fill" style="width:3%;background:linear-gradient(90deg,#e63946 0%,#f77f00 50%,#457b9d 100%);"></div></div></td>
-        </tr>
-<tr>
             <td><b>姚新宇</b></td>
-            <td>4</td><td>0</td><td>1</td><td>7</td>
-            <td><b>12</b></td>
-            <td><div class="progress-bar" style="width:100px;"><div class="fill" style="width:3%;background:linear-gradient(90deg,#e63946 0%,#f77f00 50%,#457b9d 100%);"></div></div></td>
-        </tr>
-<tr>
-            <td><b>吴迪</b></td>
-            <td>0</td><td>0</td><td>12</td><td>0</td>
-            <td><b>12</b></td>
+            <td>4</td><td>0</td><td>1</td><td>8</td>
+            <td><b>13</b></td>
             <td><div class="progress-bar" style="width:100px;"><div class="fill" style="width:3%;background:linear-gradient(90deg,#e63946 0%,#f77f00 50%,#457b9d 100%);"></div></div></td>
         </tr>
 <tr>
             <td><b>冯菲菲</b></td>
-            <td>0</td><td>0</td><td>7</td><td>1</td>
+            <td>3</td><td>0</td><td>2</td><td>5</td>
+            <td><b>10</b></td>
+            <td><div class="progress-bar" style="width:100px;"><div class="fill" style="width:2%;background:linear-gradient(90deg,#e63946 0%,#f77f00 50%,#457b9d 100%);"></div></div></td>
+        </tr>
+<tr>
+            <td><b>柯希奎</b></td>
+            <td style="color:#f77f00;font-weight:600;">8</td><td>0</td><td>0</td><td>0</td>
             <td><b>8</b></td>
             <td><div class="progress-bar" style="width:100px;"><div class="fill" style="width:2%;background:linear-gradient(90deg,#e63946 0%,#f77f00 50%,#457b9d 100%);"></div></div></td>
         </tr>
@@ -282,25 +276,19 @@
             <td><b>肖星星</b></td>
             <td style="color:#f77f00;font-weight:600;">6</td><td>0</td><td>0</td><td>1</td>
             <td><b>7</b></td>
-            <td><div class="progress-bar" style="width:100px;"><div class="fill" style="width:1%;background:linear-gradient(90deg,#e63946 0%,#f77f00 50%,#457b9d 100%);"></div></div></td>
-        </tr>
-<tr>
-            <td><b>柯希奎</b></td>
-            <td>3</td><td>0</td><td>1</td><td>0</td>
-            <td><b>4</b></td>
-            <td><div class="progress-bar" style="width:100px;"><div class="fill" style="width:1%;background:linear-gradient(90deg,#e63946 0%,#f77f00 50%,#457b9d 100%);"></div></div></td>
+            <td><div class="progress-bar" style="width:100px;"><div class="fill" style="width:2%;background:linear-gradient(90deg,#e63946 0%,#f77f00 50%,#457b9d 100%);"></div></div></td>
         </tr>
 <tr style="font-weight:700;background:#f8f9fa;">
-        <td>合计</td><td>278</td><td>0</td><td>88</td><td>124</td><td>490</td><td></td>
+        <td>合计</td><td>260</td><td>0</td><td>48</td><td>138</td><td>446</td><td></td>
     </tr></tbody>
   </table>
   </div>
   <div class="summary-box">
     <h4>待办分布小结</h4>
     <ul>
-      <li><b>待确认积压最多：</b>尤威（86个待确认）需优先推动确认</li>
+      <li><b>待确认积压最多：</b>尤威（79个待确认）需优先推动确认</li>
       <li><b>处理中积压最多：</b>尤威（0个处理中）需关注是否卡住</li>
-      <li><b>活跃合计最高：</b>尤威（118个）负载最重</li>
+      <li><b>活跃合计最高：</b>尤威（112个）负载最重</li>
     </ul>
   </div>
 </div>
@@ -313,18 +301,18 @@
   <div style="overflow-x:auto;">
   <table>
     <thead><tr><th>业务模块</th><th>Bug总数</th><th>待确认</th><th>已完结</th><th>完结率</th><th>风险等级</th></tr></thead>
-    <tbody><tr><td>PC-仓储</td><td>237</td><td>109</td><td>114</td><td>48.1%</td><td><span class="badge badge-yellow">关注</span></td></tr>
-<tr><td>MDM-PC</td><td>226</td><td>91</td><td>97</td><td>42.9%</td><td><span class="badge badge-yellow">关注</span></td></tr>
-<tr><td>PC-直播</td><td>65</td><td>20</td><td>24</td><td>36.9%</td><td><span class="badge badge-yellow">关注</span></td></tr>
+    <tbody><tr><td>PC-仓储</td><td>247</td><td>107</td><td>132</td><td>53.4%</td><td><span class="badge badge-green">健康</span></td></tr>
+<tr><td>MDM-PC</td><td>226</td><td>84</td><td>122</td><td>54.0%</td><td><span class="badge badge-green">健康</span></td></tr>
+<tr><td>PC-直播</td><td>65</td><td>15</td><td>38</td><td>58.5%</td><td><span class="badge badge-green">健康</span></td></tr>
 <tr><td>PC-商品</td><td>41</td><td>24</td><td>15</td><td>36.6%</td><td><span class="badge badge-yellow">关注</span></td></tr>
-<tr><td>PC-采购</td><td>29</td><td>4</td><td>21</td><td>72.4%</td><td><span class="badge badge-green">健康</span></td></tr>
-<tr><td>PC-配置</td><td>28</td><td>9</td><td>18</td><td>64.3%</td><td><span class="badge badge-green">健康</span></td></tr>
-<tr><td>商品</td><td>28</td><td>2</td><td>16</td><td>57.1%</td><td><span class="badge badge-green">健康</span></td></tr>
-<tr><td>PC-营销</td><td>21</td><td>10</td><td>7</td><td>33.3%</td><td><span class="badge badge-orange">中风险</span></td></tr>
+<tr><td>PC-采购</td><td>31</td><td>5</td><td>24</td><td>77.4%</td><td><span class="badge badge-green">健康</span></td></tr>
+<tr><td>PC-配置</td><td>28</td><td>8</td><td>18</td><td>64.3%</td><td><span class="badge badge-green">健康</span></td></tr>
+<tr><td>商品</td><td>28</td><td>1</td><td>18</td><td>64.3%</td><td><span class="badge badge-green">健康</span></td></tr>
+<tr><td>PC-营销</td><td>21</td><td>4</td><td>10</td><td>47.6%</td><td><span class="badge badge-yellow">关注</span></td></tr>
 <tr><td>MDM-商品中心</td><td>16</td><td>10</td><td>5</td><td>31.2%</td><td><span class="badge badge-orange">中风险</span></td></tr>
-<tr><td>其他</td><td>14</td><td>4</td><td>7</td><td>50.0%</td><td><span class="badge badge-green">健康</span></td></tr>
+<tr><td>其他</td><td>14</td><td>4</td><td>8</td><td>57.1%</td><td><span class="badge badge-green">健康</span></td></tr>
 <tr><td>MDM-用户</td><td>11</td><td>1</td><td>9</td><td>81.8%</td><td><span class="badge badge-green">健康</span></td></tr>
-<tr><td>门店-注册 / 审核 / H5 补充资料</td><td>7</td><td>4</td><td>1</td><td>14.3%</td><td><span class="badge badge-red">高风险</span></td></tr>
+<tr><td>门店-注册 / 审核 / H5 补充资料</td><td>8</td><td>5</td><td>1</td><td>12.5%</td><td><span class="badge badge-red">高风险</span></td></tr>
 </tbody>
   </table>
   </div>
@@ -334,24 +322,21 @@
   <div class="chart-box"><h3>待确认 Bug 积压时长分布</h3><canvas id="chartAging" height="320"></canvas></div>
 </div>
 <div class="section">
-  <h2>致命级 Bug 追踪（共14个未关闭）</h2>
+  <h2>致命级 Bug 追踪（共11个未关闭）</h2>
   <div style="overflow-x:auto;">
   <table>
     <thead><tr><th>ID</th><th>标题</th><th>优先级</th><th>状态</th><th>处理人</th><th>耗时(h)</th></tr></thead>
-    <tbody><tr><td>1001012</td><td>MDM-PC-门店管理-门店进件--提交进件后保存成功，但是详情内进件展示不正确</td><td><span class="badge badge-red">紧急</span></td><td>待上线</td><td>史书钰</td><td>409.8</td></tr>
-<tr><td>1001253</td><td>PC-直播-直播管理-直播中控-可输入字段删除后变成自动发放</td><td><span class="badge badge-red">紧急</span></td><td>已评审</td><td>史书钰</td><td>192.0</td></tr>
-<tr><td>1001262</td><td>PC-直播-直播管理-直播中控-商品在购物车内，PC端将商品设置为售空，小程序可以正常下单</td><td><span class="badge badge-red">紧急</span></td><td>待确认</td><td>尤威</td><td>190.8</td></tr>
-<tr><td>1001306</td><td>PC-直播-直播管理-直播中控--主播A开播-主播B登录PC页面可以关闭主播A的直播</td><td><span class="badge badge-red">紧急</span></td><td>待确认</td><td>柯希奎</td><td>74.7</td></tr>
-<tr><td>1001345</td><td>门店注册审核--编辑页面  点击保存提交页面没变化</td><td><span class="badge badge-red">紧急</span></td><td>已评审</td><td>王茂林</td><td>67.4</td></tr>
-<tr><td>1001370</td><td>限制--直播间关联的直播人员才可以进行开播</td><td><span class="badge badge-red">紧急</span></td><td>待确认</td><td>张玄玄</td><td>47.8</td></tr>
-<tr><td>1001384</td><td>BDapp-门店管理-添加门店-提示缺少仓库信息</td><td><span class="badge badge-red">紧急</span></td><td>已评审</td><td>冯菲菲</td><td>45.4</td></tr>
-<tr><td>1001391</td><td>门店注册 / 审核 / H5 补充资料--超管点击总监终审的--审核按钮，报错</td><td><span class="badge badge-red">紧急</span></td><td>待确认</td><td>王茂林</td><td>29.9</td></tr>
-<tr><td>1001392</td><td>门店注册 / 审核 / H5 补充资料--新增的BD总监进入后需要看到所有  待总监终审的门店，</td><td><span class="badge badge-red">紧急</span></td><td>待确认</td><td>王茂林</td><td>29.9</td></tr>
-<tr><td>1001411</td><td>MDM-PC-门店管理-门店进件--供应商进件成功后，会在供应商列表多一条进件的数据</td><td><span class="badge badge-red">紧急</span></td><td>待确认</td><td>未分配</td><td>22.4</td></tr>
-<tr><td>1001459</td><td>PC-配置-平台会员-会员等级--新增报错</td><td><span class="badge badge-red">紧急</span></td><td>待确认</td><td>尤威</td><td>2.7</td></tr>
-<tr><td>1001460</td><td>PC-仓储-基础信息-储位-储位类型枚举错误</td><td><span class="badge badge-red">紧急</span></td><td>待确认</td><td>牛盼盼</td><td>2.6</td></tr>
-<tr><td>1001466</td><td>门店注册 / 审核 / H5 补充资料---超管账号-BD终审，点击审核报错</td><td><span class="badge badge-red">紧急</span></td><td>待确认</td><td>王茂林</td><td>1.2</td></tr>
-<tr><td>1001467</td><td>门店注册 / 审核 / H5 补充资料----BD登录进来审核，没有回显仓库的数据</td><td><span class="badge badge-red">紧急</span></td><td>待确认</td><td>王茂林</td><td>1.2</td></tr>
+    <tbody><tr><td>1001012</td><td>MDM-PC-门店管理-门店进件--提交进件后保存成功，但是详情内进件展示不正确</td><td><span class="badge badge-red">紧急</span></td><td>待上线</td><td>彭湘豫</td><td>411.2</td></tr>
+<tr><td>1001253</td><td>PC-直播-直播管理-直播中控-可输入字段删除后变成自动发放</td><td><span class="badge badge-red">紧急</span></td><td>已评审</td><td>史书钰</td><td>193.5</td></tr>
+<tr><td>1001262</td><td>PC-直播-直播管理-直播中控-商品在购物车内，PC端将商品设置为售空，小程序可以正常下单</td><td><span class="badge badge-red">紧急</span></td><td>待确认</td><td>尤威</td><td>192.3</td></tr>
+<tr><td>1001391</td><td>门店注册 / 审核 / H5 补充资料--超管点击总监终审的--审核按钮，报错</td><td><span class="badge badge-red">紧急</span></td><td>待确认</td><td>王茂林</td><td>31.4</td></tr>
+<tr><td>1001392</td><td>门店注册 / 审核 / H5 补充资料--新增的BD总监进入后需要看到所有  待总监终审的门店，</td><td><span class="badge badge-red">紧急</span></td><td>待确认</td><td>王茂林</td><td>31.4</td></tr>
+<tr><td>1001411</td><td>MDM-PC-门店管理-门店进件--供应商进件成功后，会在供应商列表多一条进件的数据</td><td><span class="badge badge-red">紧急</span></td><td>待确认</td><td>未分配</td><td>23.9</td></tr>
+<tr><td>1001459</td><td>PC-配置-平台会员-会员等级--新增报错</td><td><span class="badge badge-red">紧急</span></td><td>待确认</td><td>尤威</td><td>4.2</td></tr>
+<tr><td>1001466</td><td>门店注册 / 审核 / H5 补充资料---超管账号-BD终审，点击审核报错</td><td><span class="badge badge-red">紧急</span></td><td>待确认</td><td>王茂林</td><td>2.7</td></tr>
+<tr><td>1001467</td><td>门店注册 / 审核 / H5 补充资料----BD登录进来审核，没有回显仓库的数据</td><td><span class="badge badge-red">紧急</span></td><td>待确认</td><td>王茂林</td><td>2.7</td></tr>
+<tr><td>1001479</td><td>门店注册 / 审核 / H5 补充资料--app-BD登录添加门店-点击提交，提示渠道类型不合法</td><td><span class="badge badge-red">紧急</span></td><td>待确认</td><td>王茂林</td><td>1.3</td></tr>
+<tr><td>1001489</td><td>PC-采购-门店订货单--收货仓库查询报错</td><td><span class="badge badge-red">紧急</span></td><td>已评审</td><td>姚新宇</td><td>0.6</td></tr>
 </tbody>
   </table>
   </div>
@@ -360,34 +345,34 @@
   <h2>状态 x 优先级交叉分析</h2>
   <table>
     <thead><tr><th>状态</th><th>紧急</th><th>高</th><th>中</th><th>低</th><th>轻微</th><th>未设置</th><th>合计</th></tr></thead>
-    <tbody><tr><td>待确认</td><td><span class="badge badge-red">14</span></td><td><span class="badge badge-orange">24</span></td><td>78</td><td>78</td><td>13</td><td>103</td><td><b>310</b></td></tr>
-<tr><td>已评审</td><td><span class="badge badge-red">4</span></td><td><span class="badge badge-orange">6</span></td><td>29</td><td>7</td><td>2</td><td>21</td><td><b>69</b></td></tr>
-<tr><td>待上线</td><td><span class="badge badge-red">1</span></td><td><span class="badge badge-orange">2</span></td><td>5</td><td>2</td><td>0</td><td>9</td><td><b>19</b></td></tr>
-<tr><td>已关闭</td><td><span class="badge badge-red">12</span></td><td><span class="badge badge-orange">50</span></td><td>44</td><td>37</td><td>5</td><td>66</td><td><b>214</b></td></tr>
-<tr><td>已拒绝</td><td><span class="badge badge-red">1</span></td><td><span class="badge badge-orange">8</span></td><td>2</td><td>2</td><td>3</td><td>3</td><td><b>19</b></td></tr>
-<tr style="font-weight:700;background:#f8f9fa;"><td>合计</td><td>32</td><td>90</td><td>158</td><td>126</td><td>23</td><td>202</td><td>768</td></tr></tbody>
+    <tbody><tr><td>待确认</td><td><span class="badge badge-red">10</span></td><td><span class="badge badge-orange">21</span></td><td>73</td><td>74</td><td>12</td><td>99</td><td><b>289</b></td></tr>
+<tr><td>已评审</td><td><span class="badge badge-red">2</span></td><td><span class="badge badge-orange">5</span></td><td>7</td><td>7</td><td>0</td><td>2</td><td><b>23</b></td></tr>
+<tr><td>待上线</td><td><span class="badge badge-red">1</span></td><td><span class="badge badge-orange">1</span></td><td>7</td><td>2</td><td>0</td><td>14</td><td><b>25</b></td></tr>
+<tr><td>已关闭</td><td><span class="badge badge-red">18</span></td><td><span class="badge badge-orange">55</span></td><td>67</td><td>43</td><td>7</td><td>81</td><td><b>271</b></td></tr>
+<tr><td>已拒绝</td><td><span class="badge badge-red">1</span></td><td><span class="badge badge-orange">8</span></td><td>3</td><td>2</td><td>4</td><td>4</td><td><b>22</b></td></tr>
+<tr style="font-weight:700;background:#f8f9fa;"><td>合计</td><td>32</td><td>90</td><td>157</td><td>128</td><td>23</td><td>200</td><td>781</td></tr></tbody>
   </table>
 </div>
 <div class="section">
   <h2>瓶颈分析与改进建议</h2>
   <div class="insight-box">
     <h4>瓶颈一：「待确认」环节严重拥堵</h4>
-    <p>310个Bug（40.4%）停在待确认状态，其中231个已超过7天、110个超过30天。</p>
+    <p>289个Bug（37.0%）停在待确认状态，其中211个已超过7天、110个超过30天。</p>
     <p style="margin-top:8px;"><b>建议：</b>设定确认时效（如提交后48小时内必须确认），组织每周集中确认会议。</p>
   </div>
   <div class="insight-box warn">
     <h4>瓶颈二：处理人负载不均，头部人员严重过载</h4>
-    <p>尤威（126个）和张玄玄（41个）承载大量Bug但完结率均不到20%。73个Bug未分配处理人。</p>
+    <p>尤威（121个）和彭湘豫（42个）承载大量Bug但完结率均不到20%。74个Bug未分配处理人。</p>
     <p style="margin-top:8px;"><b>建议：</b>立即将过载处理人名下的待确认Bug按模块分流给高完结率的处理人。</p>
   </div>
   <div class="insight-box warn">
-    <h4>瓶颈三：PC-营销模块质量风险</h4>
-    <p>PC-营销模块累计21个Bug、10个待确认、完结率仅33.3%。</p>
+    <h4>瓶颈三：MDM-商品中心模块质量风险</h4>
+    <p>MDM-商品中心模块累计16个Bug、10个待确认、完结率仅31.2%。</p>
     <p style="margin-top:8px;"><b>建议：</b>对该模块做一次专项复盘，区分是需求变更频繁、代码质量问题还是测试覆盖不足。</p>
   </div>
   <div class="insight-box">
     <h4>瓶颈四：致命级Bug关闭率低</h4>
-    <p>14个致命级Bug仍未关闭，直接影响业务的严重问题仍未得到确认和处理。</p>
+    <p>11个致命级Bug仍未关闭，直接影响业务的严重问题仍未得到确认和处理。</p>
     <p style="margin-top:8px;"><b>建议：</b>致命级Bug应在4小时内确认、24小时内给出修复方案，建立专门的紧急Bug通道。</p>
   </div>
 </div>
@@ -395,16 +380,16 @@
 <div class="footer">冷丰ERP2026 缺陷处理分析报告 | 数据截至 2026-06-06 | 自动生成</div>
 <script>
 const colors = { red:'#e63946', orange:'#f77f00', yellow:'#fcbf49', green:'#2a9d8f', blue:'#457b9d', navy:'#1d3557', gray:'#8d99ae', purple:'#7209b7', pink:'#f72585', teal:'#4ecdc4' };
-new Chart(document.getElementById('chartStatus'), { type:'doughnut', data:{ labels:["待确认", "已关闭", "已验证", "已拒绝", "已评审", "待上线"], datasets:[{ data:[310, 214, 137, 19, 69, 19], backgroundColor:[colors.red,colors.green,colors.teal,'#4ecdc4',colors.gray,colors.yellow,colors.purple,colors.blue], borderWidth:2, borderColor:'#fff' }] }, options:{ responsive:true, plugins:{ legend:{ position:'bottom', labels:{ padding:12, font:{ size:12 } } } } } });
-new Chart(document.getElementById('chartPriority'), { type:'bar', data:{ labels:["中", "低", "高", "紧急", "轻微", "未设置"], datasets:[{ label:'Bug数量', data:[201, 146, 112, 39, 27, 243], backgroundColor:[colors.blue,colors.teal,colors.orange,colors.red,colors.gray,'#ddd'], borderRadius:6 }] }, options:{ responsive:true, plugins:{ legend:{ display:false } }, scales:{ y:{ beginAtZero:true } } } });
-new Chart(document.getElementById('chartSeverity'), { type:'bar', data:{ labels:["一般", "提示", "严重", "建议", "致命", "未设置"], datasets:[{ label:'Bug数量', data:[233, 156, 89, 42, 29, 219], backgroundColor:[colors.blue,colors.teal,colors.orange,colors.yellow,colors.red,'#ddd'], borderRadius:6 }] }, options:{ responsive:true, plugins:{ legend:{ display:false } }, scales:{ y:{ beginAtZero:true } } } });
-new Chart(document.getElementById('chartTrend'), { type:'line', data:{ labels:["04-02", "04-11", "04-13", "04-14", "04-15", "04-17", "04-18", "04-20", "04-21", "04-22", "04-23", "04-24", "04-25", "04-27", "04-28", "04-29", "04-30", "05-06", "05-07", "05-08", "05-09", "05-11", "05-12", "05-13", "05-14", "05-15", "05-16", "05-18", "05-19", "05-20", "05-21", "05-22", "05-23", "05-25", "05-26", "05-27", "05-28", "05-29", "05-30", "06-01", "06-02", "06-03", "06-04", "06-05", "06-06"], datasets:[{ label:'每日新建Bug', data:[32, 27, 41, 17, 4, 22, 12, 25, 5, 6, 3, 7, 9, 17, 5, 8, 5, 4, 4, 3, 17, 17, 33, 48, 32, 25, 15, 16, 16, 21, 10, 13, 26, 13, 4, 6, 34, 19, 6, 8, 14, 32, 27, 45, 15], borderColor:colors.blue, backgroundColor:'rgba(69,123,157,0.1)', fill:true, tension:0.3, pointRadius:3 }] }, options:{ responsive:true, plugins:{ legend:{ display:false } }, scales:{ x:{ ticks:{ maxRotation:60, font:{ size:10 } } }, y:{ beginAtZero:true } } } });
-new Chart(document.getElementById('chartHandlerRate'), { type:'bar', data:{ labels:["牛盼盼", "肖星星", "史书钰", "代文希", "张玄玄", "姚新宇", "冯菲菲", "彭湘豫", "王茂林", "尤威", "吴丹萍"], datasets:[{ label:'完结率(%)', data:[52.7, 50.0, 45.4, 43.1, 14.6, 14.3, 11.1, 8.1, 4.8, 3.2, 0.0], backgroundColor:["#f77f00", "#f77f00", "#f77f00", "#f77f00", "#e63946", "#e63946", "#e63946", "#e63946", "#e63946", "#e63946", "#e63946"], borderRadius:6 }] }, options:{ indexAxis:'y', responsive:true, plugins:{ legend:{ display:false } }, scales:{ x:{ beginAtZero:true, max:100, ticks:{ callback: v => v+'%' } } } } });
-new Chart(document.getElementById('chartHandlerScatter'), { type:'bubble', data:{ datasets:[{ label:'牛盼盼', data:[{x:131,y:345.5,r:16}], backgroundColor:'rgba(247,127,0,0.6)' },{ label:'尤威', data:[{x:126,y:288.6,r:15}], backgroundColor:'rgba(230,57,70,0.6)' },{ label:'代文希', data:[{x:109,y:296.3,r:13}], backgroundColor:'rgba(247,127,0,0.6)' },{ label:'史书钰', data:[{x:108,y:169.6,r:13}], backgroundColor:'rgba(247,127,0,0.6)' },{ label:'张玄玄', data:[{x:41,y:221.2,r:6}], backgroundColor:'rgba(230,57,70,0.6)' },{ label:'彭湘豫', data:[{x:37,y:173.3,r:6}], backgroundColor:'rgba(230,57,70,0.6)' },{ label:'吴丹萍', data:[{x:28,y:0,r:6}], backgroundColor:'rgba(230,57,70,0.6)' },{ label:'符洪斌', data:[{x:26,y:0,r:6}], backgroundColor:'rgba(230,57,70,0.6)' },{ label:'王茂林', data:[{x:21,y:69.4,r:6}], backgroundColor:'rgba(230,57,70,0.6)' },{ label:'汪其鹏', data:[{x:14,y:0,r:6}], backgroundColor:'rgba(230,57,70,0.6)' },] }, options:{ responsive:true, plugins:{ legend:{ position:'right', labels:{ font:{ size:11 } } } }, scales:{ x:{ title:{ display:true, text:'Bug总数' }, beginAtZero:true }, y:{ title:{ display:true, text:'平均耗时(小时)' }, beginAtZero:true } } } });
-new Chart(document.getElementById('chartModule'), { type:'bar', data:{ labels:["PC-仓储", "MDM-PC", "PC-直播", "PC-商品", "PC-采购", "PC-配置", "商品", "PC-营销", "MDM-商品中心", "其他", "MDM-用户", "门店-注册 / 审核 / H5 补充资料"], datasets:[ { label:'待确认', data:[109, 91, 20, 24, 4, 9, 2, 10, 10, 4, 1, 4], backgroundColor:colors.red, borderRadius:4 }, { label:'已完结', data:[114, 97, 24, 15, 21, 18, 16, 7, 5, 7, 9, 1], backgroundColor:colors.green, borderRadius:4 } ] }, options:{ responsive:true, plugins:{ legend:{ position:'top' } }, scales:{ x:{ stacked:true, ticks:{ font:{ size:10 } } }, y:{ stacked:true, beginAtZero:true } } } });
-new Chart(document.getElementById('chartAging'), { type:'doughnut', data:{ labels:["< 1天", "1-3天", "3-7天", "7-30天", "> 30天"], datasets:[{ data:[41, 20, 18, 121, 110], backgroundColor:[colors.green,colors.teal,colors.yellow,colors.orange,colors.red], borderWidth:2, borderColor:'#fff' }] }, options:{ responsive:true, plugins:{ legend:{ position:'bottom', labels:{ padding:12, font:{ size:12 } } } } } });
-new Chart(document.getElementById('chartPendingStack'), { type:'bar', data:{ labels:["尤威", "牛盼盼", "代文希", "史书钰", "张玄玄", "彭湘豫", "吴丹萍", "符洪斌", "王茂林", "汪其鹏", "姚新宇", "吴迪", "冯菲菲", "肖星星", "柯希奎"], datasets:[ { label:'待确认', data:[86, 15, 54, 1, 4, 24, 28, 26, 13, 14, 4, 0, 0, 6, 3], backgroundColor:colors.red, borderRadius:3 }, { label:'处理中', data:[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], backgroundColor:colors.orange, borderRadius:3 }, { label:'待测试', data:[5, 31, 2, 18, 4, 5, 0, 0, 2, 0, 1, 12, 7, 0, 1], backgroundColor:colors.yellow, borderRadius:3 }, { label:'未解决', data:[27, 15, 4, 35, 26, 4, 0, 0, 4, 0, 7, 0, 1, 1, 0], backgroundColor:colors.blue, borderRadius:3 } ] }, options:{ indexAxis:'y', responsive:true, plugins:{ legend:{ position:'top' } }, scales:{ x:{ stacked:true, beginAtZero:true }, y:{ stacked:true, ticks:{ font:{ size:11 } } } } } });
-new Chart(document.getElementById('chartPendingPie'), { type:'doughnut', data:{ labels:['待确认','处理中','待测试','未解决'], datasets:[{ data:[278,0,88,124], backgroundColor:[colors.red,colors.orange,colors.yellow,colors.blue], borderWidth:2, borderColor:'#fff' }] }, options:{ responsive:true, plugins:{ legend:{ position:'bottom', labels:{ padding:12, font:{ size:12 } } } } } });
+new Chart(document.getElementById('chartStatus'), { type:'doughnut', data:{ labels:["待确认", "已关闭", "已验证", "已拒绝", "已评审", "待上线"], datasets:[{ data:[289, 271, 151, 22, 23, 25], backgroundColor:[colors.red,colors.green,colors.teal,'#4ecdc4',colors.gray,colors.yellow,colors.purple,colors.blue], borderWidth:2, borderColor:'#fff' }] }, options:{ responsive:true, plugins:{ legend:{ position:'bottom', labels:{ padding:12, font:{ size:12 } } } } } });
+new Chart(document.getElementById('chartPriority'), { type:'bar', data:{ labels:["中", "低", "高", "紧急", "轻微", "未设置"], datasets:[{ label:'Bug数量', data:[206, 149, 113, 42, 27, 244], backgroundColor:[colors.blue,colors.teal,colors.orange,colors.red,colors.gray,'#ddd'], borderRadius:6 }] }, options:{ responsive:true, plugins:{ legend:{ display:false } }, scales:{ y:{ beginAtZero:true } } } });
+new Chart(document.getElementById('chartSeverity'), { type:'bar', data:{ labels:["一般", "提示", "严重", "建议", "致命", "未设置"], datasets:[{ label:'Bug数量', data:[242, 157, 90, 42, 31, 219], backgroundColor:[colors.blue,colors.teal,colors.orange,colors.yellow,colors.red,'#ddd'], borderRadius:6 }] }, options:{ responsive:true, plugins:{ legend:{ display:false } }, scales:{ y:{ beginAtZero:true } } } });
+new Chart(document.getElementById('chartTrend'), { type:'line', data:{ labels:["04-02", "04-11", "04-13", "04-14", "04-15", "04-17", "04-18", "04-20", "04-21", "04-22", "04-23", "04-24", "04-25", "04-27", "04-28", "04-29", "04-30", "05-06", "05-07", "05-08", "05-09", "05-11", "05-12", "05-13", "05-14", "05-15", "05-16", "05-18", "05-19", "05-20", "05-21", "05-22", "05-23", "05-25", "05-26", "05-27", "05-28", "05-29", "05-30", "06-01", "06-02", "06-03", "06-04", "06-05", "06-06"], datasets:[{ label:'每日新建Bug', data:[32, 27, 41, 17, 4, 22, 12, 25, 5, 6, 3, 7, 9, 17, 5, 8, 5, 4, 4, 3, 17, 17, 33, 48, 32, 25, 15, 16, 16, 21, 10, 13, 26, 13, 4, 6, 34, 19, 6, 8, 14, 32, 27, 45, 28], borderColor:colors.blue, backgroundColor:'rgba(69,123,157,0.1)', fill:true, tension:0.3, pointRadius:3 }] }, options:{ responsive:true, plugins:{ legend:{ display:false } }, scales:{ x:{ ticks:{ maxRotation:60, font:{ size:10 } } }, y:{ beginAtZero:true } } } });
+new Chart(document.getElementById('chartHandlerRate'), { type:'bar', data:{ labels:["吴迪", "牛盼盼", "肖星星", "汪其鹏", "代文希", "史书钰", "柯希奎", "张玄玄", "姚新宇", "王茂林", "冯菲菲"], datasets:[{ label:'完结率(%)', data:[100.0, 65.2, 50.0, 50.0, 48.1, 44.2, 25.0, 15.0, 13.3, 9.1, 9.1], backgroundColor:["#2a9d8f", "#f77f00", "#f77f00", "#f77f00", "#f77f00", "#f77f00", "#e63946", "#e63946", "#e63946", "#e63946", "#e63946"], borderRadius:6 }] }, options:{ indexAxis:'y', responsive:true, plugins:{ legend:{ display:false } }, scales:{ x:{ beginAtZero:true, max:100, ticks:{ callback: v => v+'%' } } } } });
+new Chart(document.getElementById('chartHandlerScatter'), { type:'bubble', data:{ datasets:[{ label:'牛盼盼', data:[{x:138,y:364.9,r:17}], backgroundColor:'rgba(247,127,0,0.6)' },{ label:'尤威', data:[{x:121,y:284.1,r:15}], backgroundColor:'rgba(230,57,70,0.6)' },{ label:'史书钰', data:[{x:120,y:165.2,r:15}], backgroundColor:'rgba(247,127,0,0.6)' },{ label:'代文希', data:[{x:108,y:325.8,r:13}], backgroundColor:'rgba(247,127,0,0.6)' },{ label:'彭湘豫', data:[{x:42,y:173.3,r:6}], backgroundColor:'rgba(230,57,70,0.6)' },{ label:'张玄玄', data:[{x:40,y:221.2,r:6}], backgroundColor:'rgba(230,57,70,0.6)' },{ label:'符洪斌', data:[{x:27,y:568.0,r:6}], backgroundColor:'rgba(230,57,70,0.6)' },{ label:'王茂林', data:[{x:22,y:61.9,r:6}], backgroundColor:'rgba(230,57,70,0.6)' },{ label:'吴丹萍', data:[{x:19,y:194.6,r:6}], backgroundColor:'rgba(230,57,70,0.6)' },{ label:'姚新宇', data:[{x:15,y:165.2,r:6}], backgroundColor:'rgba(230,57,70,0.6)' },] }, options:{ responsive:true, plugins:{ legend:{ position:'right', labels:{ font:{ size:11 } } } }, scales:{ x:{ title:{ display:true, text:'Bug总数' }, beginAtZero:true }, y:{ title:{ display:true, text:'平均耗时(小时)' }, beginAtZero:true } } } });
+new Chart(document.getElementById('chartModule'), { type:'bar', data:{ labels:["PC-仓储", "MDM-PC", "PC-直播", "PC-商品", "PC-采购", "PC-配置", "商品", "PC-营销", "MDM-商品中心", "其他", "MDM-用户", "门店-注册 / 审核 / H5 补充资料"], datasets:[ { label:'待确认', data:[107, 84, 15, 24, 5, 8, 1, 4, 10, 4, 1, 5], backgroundColor:colors.red, borderRadius:4 }, { label:'已完结', data:[132, 122, 38, 15, 24, 18, 18, 10, 5, 8, 9, 1], backgroundColor:colors.green, borderRadius:4 } ] }, options:{ responsive:true, plugins:{ legend:{ position:'top' } }, scales:{ x:{ stacked:true, ticks:{ font:{ size:10 } } }, y:{ stacked:true, beginAtZero:true } } } });
+new Chart(document.getElementById('chartAging'), { type:'doughnut', data:{ labels:["< 1天", "1-3天", "3-7天", "7-30天", "> 30天"], datasets:[{ data:[47, 17, 14, 101, 110], backgroundColor:[colors.green,colors.teal,colors.yellow,colors.orange,colors.red], borderWidth:2, borderColor:'#fff' }] }, options:{ responsive:true, plugins:{ legend:{ position:'bottom', labels:{ padding:12, font:{ size:12 } } } } } });
+new Chart(document.getElementById('chartPendingStack'), { type:'bar', data:{ labels:["尤威", "史书钰", "代文希", "牛盼盼", "彭湘豫", "张玄玄", "符洪斌", "王茂林", "吴丹萍", "姚新宇", "冯菲菲", "柯希奎", "肖星星"], datasets:[ { label:'待确认', data:[79, 5, 48, 23, 24, 3, 25, 14, 18, 4, 3, 8, 6], backgroundColor:colors.red, borderRadius:3 }, { label:'处理中', data:[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], backgroundColor:colors.orange, borderRadius:3 }, { label:'待测试', data:[6, 17, 2, 6, 10, 4, 0, 0, 0, 1, 2, 0, 0], backgroundColor:colors.yellow, borderRadius:3 }, { label:'未解决', data:[27, 40, 4, 18, 4, 26, 0, 5, 0, 8, 5, 0, 1], backgroundColor:colors.blue, borderRadius:3 } ] }, options:{ indexAxis:'y', responsive:true, plugins:{ legend:{ position:'top' } }, scales:{ x:{ stacked:true, beginAtZero:true }, y:{ stacked:true, ticks:{ font:{ size:11 } } } } } });
+new Chart(document.getElementById('chartPendingPie'), { type:'doughnut', data:{ labels:['待确认','处理中','待测试','未解决'], datasets:[{ data:[260,0,48,138], backgroundColor:[colors.red,colors.orange,colors.yellow,colors.blue], borderWidth:2, borderColor:'#fff' }] }, options:{ responsive:true, plugins:{ legend:{ position:'bottom', labels:{ padding:12, font:{ size:12 } } } } } });
 </script>
 </body>
 </html>
