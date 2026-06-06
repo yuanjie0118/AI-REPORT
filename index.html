@@ -7,11 +7,11 @@
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body { font-family: -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif; background: #f5f7fa; color: #333; padding: 40px 20px; }
-  .container { max-width: 800px; margin: 0 auto; }
+  .container { max-width: 900px; margin: 0 auto; }
   h1 { font-size: 28px; margin-bottom: 8px; color: #1a1a2e; }
   .subtitle { color: #888; font-size: 14px; margin-bottom: 24px; }
-  .stats { display: flex; gap: 16px; margin-bottom: 24px; }
-  .stat-card { background: #fff; border-radius: 12px; padding: 16px 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); flex: 1; }
+  .stats { display: flex; gap: 12px; margin-bottom: 24px; flex-wrap: wrap; }
+  .stat-card { background: #fff; border-radius: 12px; padding: 16px 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); min-width: 100px; flex: 1; }
   .stat-card .num { font-size: 24px; font-weight: 700; color: #0f3460; }
   .stat-card .label { font-size: 12px; color: #888; margin-top: 4px; }
   table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
@@ -21,6 +21,7 @@
   tr.date-row td { background: #f0f2f5; font-weight: 600; color: #555; padding: 10px 20px; font-size: 13px; }
   a { color: #0f3460; text-decoration: none; font-weight: 500; }
   a:hover { text-decoration: underline; }
+  .badge { display: inline-block; padding: 2px 10px; border-radius: 10px; font-size: 12px; font-weight: 600; background: #e8f0fe; color: #0f3460; }
   .empty { text-align: center; padding: 60px 20px; color: #888; }
   .footer { text-align: center; margin-top: 40px; font-size: 12px; color: #aaa; }
 </style>
@@ -28,15 +29,16 @@
 <body>
 <div class="container">
   <h1>报表中心</h1>
-  <p class="subtitle">历史报表归档与快速导航</p>
+  <p class="subtitle">按模块分类的历史报表归档与快速导航</p>
   <div class="stats">
     <div class="stat-card"><div class="num">1</div><div class="label">报表总数</div></div>
     <div class="stat-card"><div class="num">1</div><div class="label">日期跨度</div></div>
+    <div class="stat-card"><div class="num">1</div><div class="label">IT</div></div>
   </div>
-  <table><thead><tr><th>项目名称</th><th>生成日期</th></tr></thead><tbody><tr class="date-row"><td colspan="2">📅 2026-06-05</td></tr>
-<tr><td><a href="reports/2026-06-05-coldfeng-erp.html">coldfeng-erp</a></td><td>2026-06-05</td></tr>
+  <table><thead><tr><th style="width:80px">模块</th><th>项目名称</th><th style="width:120px">生成日期</th></tr></thead><tbody><tr class="date-row"><td colspan="3">📅 2026-06-05</td></tr>
+<tr><td><span class="badge">IT</span></td><td><a href="reports/it/2026-06-05-coldfeng-erp.html">coldfeng-erp</a></td><td>2026-06-05</td></tr>
 </tbody></table>
-  <div class="footer">自动生成于 2026-06-06 10:40</div>
+  <div class="footer">自动生成于 2026-06-06 10:43</div>
 </div>
 </body>
 </html>
