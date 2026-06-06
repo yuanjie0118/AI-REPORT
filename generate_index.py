@@ -8,7 +8,8 @@ MODULE_MAP = {
     "it": "IT",
     "business": "业务",
     "finance": "财务",
-    "warehouse": "仓储"
+    "warehouse": "仓储",
+    "customer_service": "客服"
 }
 
 def parse_filename(filename):
