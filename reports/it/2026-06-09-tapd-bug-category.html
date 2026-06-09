@@ -61,12 +61,12 @@
 
 <header>
   <h1>TAPD 未结束缺陷分类分析报告</h1>
-  <p>数据截止: 2026-06-09 20:19 | 统计"待确认/已拒绝/处理中/待测试/未解决"等未结束状态的缺陷（已结束=已解决+已关闭）</p>
+  <p>数据截止: 2026-06-09 20:28 | 统计"待确认/已拒绝/处理中/待测试/未解决"等未结束状态的缺陷（已结束=已解决+已关闭）</p>
 </header>
 
 <div class="kpi-row">
   <div class="kpi-card"><div class="num">861</div><div class="label">缺陷总数</div></div>
-  <div class="kpi-card"><div class="num">186</div><div class="label">未结束缺陷</div></div>
+  <div class="kpi-card"><div class="num">183</div><div class="label">未结束缺陷</div></div>
   <div class="kpi-card"><div class="num">11</div><div class="label">分类数</div></div>
   <div class="kpi-card"><div class="num">32</div><div class="label">TOP1分类: 数据校验/业务逻辑</div></div>
   <div class="kpi-card"><div class="num">17%</div><div class="label">TOP1占比</div></div>
@@ -75,9 +75,9 @@
 <div class="summary-insight">
   <h2>核心发现</h2>
   <ul>
-    <li><strong>最突出问题：</strong>「数据校验/业务逻辑」类缺陷最多，达 32 条（17.2%），说明前后端与PRD的字段对齐是最大短板。</li>
-    <li><strong>第二大类：</strong>「其他」31 条（16.7%），数据校验和业务规则缺失需引起重视。</li>
-    <li><strong>模块分布：</strong>PC端（106条，57.0%）是缺陷重灾区，其次是MDM（50条）。</li>
+    <li><strong>最突出问题：</strong>「数据校验/业务逻辑」类缺陷最多，达 32 条（17.5%），说明前后端与PRD的字段对齐是最大短板。</li>
+    <li><strong>第二大类：</strong>「其他」31 条（16.9%），数据校验和业务规则缺失需引起重视。</li>
+    <li><strong>模块分布：</strong>PC端（104条，56.8%）是缺陷重灾区，其次是MDM（49条）。</li>
     <li><strong>建议优先：</strong>先集中修复"字段缺失/不一致"和"数据校验"类缺陷，可大幅提升产品体验和减少测试回归轮次。</li>
   </ul>
 </div>
@@ -106,32 +106,32 @@
   
     <div class="module-bar-row">
       <span class="module-name">PC端</span>
-      <div class="bar-bg"><div class="bar-fill" style="width:100.0%">106</div></div>
-      <span class="module-pct">57.0%</span>
+      <div class="bar-bg"><div class="bar-fill" style="width:100.0%">104</div></div>
+      <span class="module-pct">56.8%</span>
     </div>
     <div class="module-bar-row">
       <span class="module-name">MDM</span>
-      <div class="bar-bg"><div class="bar-fill" style="width:47.16981132075472%">50</div></div>
-      <span class="module-pct">26.9%</span>
+      <div class="bar-bg"><div class="bar-fill" style="width:47.11538461538461%">49</div></div>
+      <span class="module-pct">26.8%</span>
     </div>
     <div class="module-bar-row">
       <span class="module-name">其他</span>
-      <div class="bar-bg"><div class="bar-fill" style="width:14.150943396226415%">15</div></div>
-      <span class="module-pct">8.1%</span>
+      <div class="bar-bg"><div class="bar-fill" style="width:14.423076923076922%">15</div></div>
+      <span class="module-pct">8.2%</span>
     </div>
     <div class="module-bar-row">
       <span class="module-name">C端小程序</span>
-      <div class="bar-bg"><div class="bar-fill" style="width:7.547169811320755%">8</div></div>
-      <span class="module-pct">4.3%</span>
+      <div class="bar-bg"><div class="bar-fill" style="width:7.6923076923076925%">8</div></div>
+      <span class="module-pct">4.4%</span>
     </div>
     <div class="module-bar-row">
       <span class="module-name">ERP</span>
-      <div class="bar-bg"><div class="bar-fill" style="width:3.7735849056603774%">4</div></div>
+      <div class="bar-bg"><div class="bar-fill" style="width:3.8461538461538463%">4</div></div>
       <span class="module-pct">2.2%</span>
     </div>
     <div class="module-bar-row">
       <span class="module-name">移动端</span>
-      <div class="bar-bg"><div class="bar-fill" style="width:2.8301886792452833%">3</div></div>
+      <div class="bar-bg"><div class="bar-fill" style="width:2.8846153846153846%">3</div></div>
       <span class="module-pct">1.6%</span>
     </div>
 </div>
@@ -156,51 +156,51 @@
       <tbody>
         <tr>
         <td class="handler-name">彭湘豫</td>
-        <td class="num-cell"><strong>59</strong></td>
+        <td class="num-cell"><strong>58</strong></td>
         <td class="num-cell">31.7%</td>
-        <td class='num-cell'>4</td><td class='num-cell'>2</td><td class='num-cell'>-</td><td class='num-cell'>46</td><td class='num-cell'>7</td>
-        <td class="cat-cell">字段缺失/多余/不一致(14), 其他(12), 搜索/筛选/查询(10)</td>
+        <td class='num-cell'>4</td><td class='num-cell'>2</td><td class='num-cell'>-</td><td class='num-cell'>45</td><td class='num-cell'>7</td>
+        <td class="cat-cell">字段缺失/多余/不一致(14), 其他(12), 搜索/筛选/查询(9)</td>
     </tr><tr>
         <td class="handler-name">代文希</td>
         <td class="num-cell"><strong>22</strong></td>
-        <td class="num-cell">11.8%</td>
+        <td class="num-cell">12.0%</td>
         <td class='num-cell'>1</td><td class='num-cell'>2</td><td class='num-cell'>-</td><td class='num-cell'>19</td><td class='num-cell'>-</td>
         <td class="cat-cell">数据校验/业务逻辑(7), 搜索/筛选/查询(5), 其他(2)</td>
     </tr><tr>
         <td class="handler-name">王茂林</td>
         <td class="num-cell"><strong>18</strong></td>
-        <td class="num-cell">9.7%</td>
+        <td class="num-cell">9.8%</td>
         <td class='num-cell'>4</td><td class='num-cell'>1</td><td class='num-cell'>1</td><td class='num-cell'>10</td><td class='num-cell'>2</td>
         <td class="cat-cell">其他(5), 数据未展示/展示不完整(4), 数据展示不正确(3)</td>
     </tr><tr>
         <td class="handler-name">尤威</td>
         <td class="num-cell"><strong>16</strong></td>
-        <td class="num-cell">8.6%</td>
+        <td class="num-cell">8.7%</td>
         <td class='num-cell'>1</td><td class='num-cell'>4</td><td class='num-cell'>-</td><td class='num-cell'>8</td><td class='num-cell'>3</td>
         <td class="cat-cell">报错/异常/崩溃(4), 数据展示不正确(3), 其他(3)</td>
     </tr><tr>
         <td class="handler-name">肖星星</td>
         <td class="num-cell"><strong>13</strong></td>
-        <td class="num-cell">7.0%</td>
+        <td class="num-cell">7.1%</td>
         <td class='num-cell'>1</td><td class='num-cell'>-</td><td class='num-cell'>-</td><td class='num-cell'>10</td><td class='num-cell'>2</td>
         <td class="cat-cell">数据校验/业务逻辑(7), 其他(2), 导入/导出/文件上传(1)</td>
     </tr><tr>
         <td class="handler-name">未分配</td>
         <td class="num-cell"><strong>12</strong></td>
-        <td class="num-cell">6.5%</td>
+        <td class="num-cell">6.6%</td>
         <td class='num-cell'>-</td><td class='num-cell'>3</td><td class='num-cell'>-</td><td class='num-cell'>9</td><td class='num-cell'>-</td>
         <td class="cat-cell">UI/交互/样式(3), 数据展示不正确(2), 数据校验/业务逻辑(2)</td>
     </tr><tr>
         <td class="handler-name">史书钰</td>
         <td class="num-cell"><strong>9</strong></td>
-        <td class="num-cell">4.8%</td>
+        <td class="num-cell">4.9%</td>
         <td class='num-cell'>-</td><td class='num-cell'>6</td><td class='num-cell'>1</td><td class='num-cell'>2</td><td class='num-cell'>-</td>
         <td class="cat-cell">其他(2), 报错/异常/崩溃(2), 字段缺失/多余/不一致(1)</td>
     </tr><tr>
         <td class="handler-name">柯希奎</td>
-        <td class="num-cell"><strong>8</strong></td>
-        <td class="num-cell">4.3%</td>
-        <td class='num-cell'>-</td><td class='num-cell'>1</td><td class='num-cell'>-</td><td class='num-cell'>7</td><td class='num-cell'>-</td>
+        <td class="num-cell"><strong>7</strong></td>
+        <td class="num-cell">3.8%</td>
+        <td class='num-cell'>-</td><td class='num-cell'>1</td><td class='num-cell'>-</td><td class='num-cell'>6</td><td class='num-cell'>-</td>
         <td class="cat-cell">数据展示不正确(2), 数据校验/业务逻辑(1), UI/交互/样式(1)</td>
     </tr><tr>
         <td class="handler-name">牛盼盼</td>
@@ -269,12 +269,6 @@
         <td class='num-cell'>-</td><td class='num-cell'>1</td><td class='num-cell'>-</td><td class='num-cell'>-</td><td class='num-cell'>-</td>
         <td class="cat-cell">删除/状态流转(1)</td>
     </tr><tr>
-        <td class="handler-name">汪其鹏;尤威</td>
-        <td class="num-cell"><strong>1</strong></td>
-        <td class="num-cell">0.5%</td>
-        <td class='num-cell'>-</td><td class='num-cell'>-</td><td class='num-cell'>-</td><td class='num-cell'>1</td><td class='num-cell'>-</td>
-        <td class="cat-cell">数据展示不正确(1)</td>
-    </tr><tr>
         <td class="handler-name">张玄玄;王茂林</td>
         <td class="num-cell"><strong>1</strong></td>
         <td class="num-cell">0.5%</td>
@@ -296,7 +290,7 @@
 <h2 style="font-size:20px; margin-bottom:16px;">分类明细</h2>
 
     <div class="detail-card">
-      <h3>数据校验/业务逻辑 <span class="badge">32条 (17.2%)</span></h3>
+      <h3>数据校验/业务逻辑 <span class="badge">32条 (17.5%)</span></h3>
       <table>
         <thead><tr><th>#</th><th>Bug ID</th><th>标题</th><th>模块</th><th>状态</th><th>优先级</th><th>处理人</th></tr></thead>
         <tbody>
@@ -592,7 +586,7 @@
       </table>
     </div>
     <div class="detail-card">
-      <h3>其他 <span class="badge">31条 (16.7%)</span></h3>
+      <h3>其他 <span class="badge">31条 (16.9%)</span></h3>
       <table>
         <thead><tr><th>#</th><th>Bug ID</th><th>标题</th><th>模块</th><th>状态</th><th>优先级</th><th>处理人</th></tr></thead>
         <tbody>
@@ -879,7 +873,7 @@
       </table>
     </div>
     <div class="detail-card">
-      <h3>字段缺失/多余/不一致 <span class="badge">24条 (12.9%)</span></h3>
+      <h3>字段缺失/多余/不一致 <span class="badge">24条 (13.1%)</span></h3>
       <table>
         <thead><tr><th>#</th><th>Bug ID</th><th>标题</th><th>模块</th><th>状态</th><th>优先级</th><th>处理人</th></tr></thead>
         <tbody>
@@ -1103,7 +1097,7 @@
       </table>
     </div>
     <div class="detail-card">
-      <h3>数据展示不正确 <span class="badge">21条 (11.3%)</span></h3>
+      <h3>数据展示不正确 <span class="badge">20条 (10.9%)</span></h3>
       <table>
         <thead><tr><th>#</th><th>Bug ID</th><th>标题</th><th>模块</th><th>状态</th><th>优先级</th><th>处理人</th></tr></thead>
         <tbody>
@@ -1208,15 +1202,6 @@
           </tr>
           <tr>
             <td>12</td>
-            <td>1135437929001001212</td>
-            <td class="title-cell">MDM-PC-商品中心-商品列表-添加商品-从商品库添加商品，左侧类目数量展示不正确</td>
-            <td>MDM-PC</td>
-            <td>待确认</td>
-            <td><span class="prio-medium">中</span></td>
-            <td>汪其鹏;尤威</td>
-          </tr>
-          <tr>
-            <td>13</td>
             <td>1135437929001001289</td>
             <td class="title-cell">MDM-PC-门店管理-门店详情-关于进件信息，字段数据展示不正确</td>
             <td>MDM-PC</td>
@@ -1225,7 +1210,7 @@
             <td>王茂林</td>
           </tr>
           <tr>
-            <td>14</td>
+            <td>13</td>
             <td>1135437929001001291</td>
             <td class="title-cell">MDM-PC-门店管理-门店详情-绑定客户tab中数据展示不正确</td>
             <td>MDM-PC</td>
@@ -1234,7 +1219,7 @@
             <td>王茂林</td>
           </tr>
           <tr>
-            <td>15</td>
+            <td>14</td>
             <td>1135437929001001409</td>
             <td class="title-cell">MDM-PC-门店管理-供应商进件--和原型不一致</td>
             <td>MDM-PC</td>
@@ -1243,7 +1228,7 @@
             <td>彭湘豫</td>
           </tr>
           <tr>
-            <td>16</td>
+            <td>15</td>
             <td>1135437929001001428</td>
             <td class="title-cell">MDM-PC-商家管理--结算信息展示不正确</td>
             <td>MDM-PC</td>
@@ -1252,7 +1237,7 @@
             <td>彭湘豫</td>
           </tr>
           <tr>
-            <td>17</td>
+            <td>16</td>
             <td>1135437929001001473</td>
             <td class="title-cell">PC-仓储-出库-分拣单-列表数据中，分拣人展示不正确</td>
             <td>PC-仓储</td>
@@ -1261,7 +1246,7 @@
             <td>肖星星</td>
           </tr>
           <tr>
-            <td>18</td>
+            <td>17</td>
             <td>1135437929001001480</td>
             <td class="title-cell">移动端-仓储-出库-发货-已装载包裹列表中，点击修改耗材后，数据展示不正确</td>
             <td>移动端-仓储</td>
@@ -1270,7 +1255,7 @@
             <td>冯菲菲</td>
           </tr>
           <tr>
-            <td>19</td>
+            <td>18</td>
             <td>1135437929001001516</td>
             <td class="title-cell">PC-仓储-一个仓储商家添加了第二个仓库后，点仓储，多仓的显示不正确</td>
             <td>PC-仓储</td>
@@ -1279,7 +1264,7 @@
             <td>未分配</td>
           </tr>
           <tr>
-            <td>20</td>
+            <td>19</td>
             <td>1135437929001001560</td>
             <td class="title-cell">PC-营销-营销模板-模板配置--指定优惠券的适用范围展示不正确</td>
             <td>PC-营销</td>
@@ -1288,7 +1273,7 @@
             <td>张玄玄;尤威</td>
           </tr>
           <tr>
-            <td>21</td>
+            <td>20</td>
             <td>1135437929001001564</td>
             <td class="title-cell">PC-仓储-入库-入库单-在app上点击确认收货按钮后，入库单状态展示不正确（配置的全量收货自动关单为否，入库单状态还是更新为关闭）</td>
             <td>PC-仓储</td>
@@ -1300,21 +1285,12 @@
       </table>
     </div>
     <div class="detail-card">
-      <h3>搜索/筛选/查询 <span class="badge">21条 (11.3%)</span></h3>
+      <h3>搜索/筛选/查询 <span class="badge">20条 (10.9%)</span></h3>
       <table>
         <thead><tr><th>#</th><th>Bug ID</th><th>标题</th><th>模块</th><th>状态</th><th>优先级</th><th>处理人</th></tr></thead>
         <tbody>
           <tr>
             <td>1</td>
-            <td>1135437929001000684</td>
-            <td class="title-cell">PC-配置-推荐位配置-小程序推荐位-列表数据-状态筛选框数据未按照原型设计</td>
-            <td>PC-配置</td>
-            <td>待确认</td>
-            <td><span class="">未设置</span></td>
-            <td>彭湘豫</td>
-          </tr>
-          <tr>
-            <td>2</td>
             <td>1135437929001000817</td>
             <td class="title-cell">PC-仓储-基础信息-储位-筛选框中多余了仓库筛选</td>
             <td>PC-仓储</td>
@@ -1323,7 +1299,7 @@
             <td>代文希</td>
           </tr>
           <tr>
-            <td>3</td>
+            <td>2</td>
             <td>1135437929001001060</td>
             <td class="title-cell">MDM-PC-商品中心-商品列表-商品状态筛选框和列表中的商品状态名称展示不一致</td>
             <td>MDM-PC</td>
@@ -1332,7 +1308,7 @@
             <td>柯希奎</td>
           </tr>
           <tr>
-            <td>4</td>
+            <td>3</td>
             <td>1135437929001001273</td>
             <td class="title-cell">PC-仓储-出库-出库单-按照目的仓库筛选，结果展示不正确</td>
             <td>PC-仓储</td>
@@ -1341,7 +1317,7 @@
             <td>代文希</td>
           </tr>
           <tr>
-            <td>5</td>
+            <td>4</td>
             <td>1135437929001001292</td>
             <td class="title-cell">MDM-PC-门店管理-门店列表-按照主体名称筛选数据，结果展示不正确</td>
             <td>MDM-PC</td>
@@ -1350,7 +1326,7 @@
             <td>牛盼盼</td>
           </tr>
           <tr>
-            <td>6</td>
+            <td>5</td>
             <td>1135437929001001361</td>
             <td class="title-cell">PC-仓储-库存-库存查询-供应商/生产日期/来源类型/来源单号数据展示不正确</td>
             <td>PC-仓储</td>
@@ -1359,7 +1335,7 @@
             <td>代文希</td>
           </tr>
           <tr>
-            <td>7</td>
+            <td>6</td>
             <td>1135437929001001413</td>
             <td class="title-cell">人员中包括主播、采购员、BD中，状态筛选器里有个已过期的状态,需要移除</td>
             <td>未分类</td>
@@ -1368,7 +1344,7 @@
             <td>彭湘豫</td>
           </tr>
           <tr>
-            <td>8</td>
+            <td>7</td>
             <td>1135437929001001449</td>
             <td class="title-cell">PC-采购-采购订单--输入商品不可回显商品编码，商品分类下没有搜索框</td>
             <td>PC-采购</td>
@@ -1377,7 +1353,7 @@
             <td>彭湘豫</td>
           </tr>
           <tr>
-            <td>9</td>
+            <td>8</td>
             <td>1135437929001001463</td>
             <td class="title-cell">PC-仓储-入库-入库单-收货记录中，按照状态筛选数据，下拉框无数据</td>
             <td>PC-仓储</td>
@@ -1386,7 +1362,7 @@
             <td>代文希</td>
           </tr>
           <tr>
-            <td>10</td>
+            <td>9</td>
             <td>1135437929001001484</td>
             <td class="title-cell">PC-仓储：相关页面货主查询条件下拉选择时，仅允许选择到当前用户绑定的货主</td>
             <td>PC-仓储：相关页面货主查询条件下拉选择时，仅允许选择到当前用户绑定的货主</td>
@@ -1395,7 +1371,7 @@
             <td>肖星星</td>
           </tr>
           <tr>
-            <td>11</td>
+            <td>10</td>
             <td>1135437929001001500</td>
             <td class="title-cell">MDM-PC-商家管理--业务伙伴-商家列表-门店档案-主体名称输入框输入内容，点击查询，页面展示的不正确。分帐服务下拉框也是一样的</td>
             <td>MDM-PC</td>
@@ -1404,7 +1380,7 @@
             <td>彭湘豫;王茂林</td>
           </tr>
           <tr>
-            <td>12</td>
+            <td>11</td>
             <td>1135437929001001575</td>
             <td class="title-cell">PC-仓储-策略管理-周转策略-缺失查询条件：周转规则</td>
             <td>PC-仓储</td>
@@ -1413,7 +1389,7 @@
             <td>彭湘豫</td>
           </tr>
           <tr>
-            <td>13</td>
+            <td>12</td>
             <td>1135437929001001590</td>
             <td class="title-cell">PC-仓储-任务-任务组管理-查询条件缺失调用单号、关联单号、创建时间查询条件</td>
             <td>PC-仓储</td>
@@ -1422,7 +1398,7 @@
             <td>彭湘豫</td>
           </tr>
           <tr>
-            <td>14</td>
+            <td>13</td>
             <td>1135437929001001596</td>
             <td class="title-cell">MDM-PC-门店管理-门店列表--主体名称搜索框输入内容，点击查询，列表展示错误</td>
             <td>MDM-PC</td>
@@ -1431,7 +1407,7 @@
             <td>王茂林</td>
           </tr>
           <tr>
-            <td>15</td>
+            <td>14</td>
             <td>1135437929001001599</td>
             <td class="title-cell">PC-仓储-任务-任务管理-缺失查询条件：创建时间</td>
             <td>PC-仓储</td>
@@ -1440,7 +1416,7 @@
             <td>彭湘豫</td>
           </tr>
           <tr>
-            <td>16</td>
+            <td>15</td>
             <td>1135437929001001615</td>
             <td class="title-cell">PC-仓储-出库-出库单-出库单号查询条件变更为单号，支持查询出库单号、来源单号、关联单号</td>
             <td>PC-仓储</td>
@@ -1449,7 +1425,7 @@
             <td>彭湘豫</td>
           </tr>
           <tr>
-            <td>17</td>
+            <td>16</td>
             <td>1135437929001001616</td>
             <td class="title-cell">PC-仓储-出库-出库单-单据时间字段和查询条件去除</td>
             <td>PC-仓储</td>
@@ -1458,7 +1434,7 @@
             <td>彭湘豫</td>
           </tr>
           <tr>
-            <td>18</td>
+            <td>17</td>
             <td>1135437929001001620</td>
             <td class="title-cell">PC-仓储-库存-库存查询-商品编码查询条件改为商品，支持按编码、条码、名称进行查询</td>
             <td>PC-仓储</td>
@@ -1467,7 +1443,7 @@
             <td>彭湘豫</td>
           </tr>
           <tr>
-            <td>19</td>
+            <td>18</td>
             <td>1135437929001001621</td>
             <td class="title-cell">PC-仓储-库存-库存日志-查询条件缺失：货主、商品、储位、容器、单号、规则编码</td>
             <td>PC-仓储</td>
@@ -1476,7 +1452,7 @@
             <td>彭湘豫</td>
           </tr>
           <tr>
-            <td>20</td>
+            <td>19</td>
             <td>1135437929001001633</td>
             <td class="title-cell">PC-采购-采购订单-商品类型查询条件变更为营销类型</td>
             <td>PC-采购</td>
@@ -1485,7 +1461,7 @@
             <td>史书钰</td>
           </tr>
           <tr>
-            <td>21</td>
+            <td>20</td>
             <td>1135437929001001638</td>
             <td class="title-cell">PC-仓储-库存-库存日志-在app上收货成功后，库存查询列表中未展示生产日期</td>
             <td>PC-仓储</td>
@@ -1497,7 +1473,7 @@
       </table>
     </div>
     <div class="detail-card">
-      <h3>UI/交互/样式 <span class="badge">16条 (8.6%)</span></h3>
+      <h3>UI/交互/样式 <span class="badge">16条 (8.7%)</span></h3>
       <table>
         <thead><tr><th>#</th><th>Bug ID</th><th>标题</th><th>模块</th><th>状态</th><th>优先级</th><th>处理人</th></tr></thead>
         <tbody>
@@ -1649,123 +1625,7 @@
       </table>
     </div>
     <div class="detail-card">
-      <h3>报错/异常/崩溃 <span class="badge">12条 (6.5%)</span></h3>
-      <table>
-        <thead><tr><th>#</th><th>Bug ID</th><th>标题</th><th>模块</th><th>状态</th><th>优先级</th><th>处理人</th></tr></thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>1135437929001000909</td>
-            <td class="title-cell">PC-直播-直播管理-直播场次-新增直播场地关联模版，报错</td>
-            <td>PC-直播</td>
-            <td>已拒绝</td>
-            <td><span class="prio-urgent">紧急</span></td>
-            <td>史书钰</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>1135437929001001017</td>
-            <td class="title-cell">PC-营销-直播营销-直播营销配置-新增优惠券，关联直播，报错</td>
-            <td>PC-营销</td>
-            <td>已拒绝</td>
-            <td><span class="prio-high">高</span></td>
-            <td>史书钰</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>1135437929001001201</td>
-            <td class="title-cell">PC-直播-直播商品-直播排品-录入直播库存数据后，对应字段仍标红，样式显示异常。</td>
-            <td>PC-直播</td>
-            <td>待确认</td>
-            <td><span class="">低</span></td>
-            <td>柯希奎</td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td>1135437929001001281</td>
-            <td class="title-cell">MDM-PC-仓库管理-仓库列表-创建二号仓库，主体选择已注册完成的仓库主体提交新建后，该仓库分配的账号、密码登录失败</td>
-            <td>MDM-PC</td>
-            <td>待确认</td>
-            <td><span class="prio-high">高</span></td>
-            <td>王茂林</td>
-          </tr>
-          <tr>
-            <td>5</td>
-            <td>1135437929001001369</td>
-            <td class="title-cell">移动端-仓储-入库-收货-点击确认收货按钮时，任务引擎没有配上架任务，提示语需要修改为：任务引擎匹配失败，请联系管理员</td>
-            <td>移动端-仓储</td>
-            <td>待确认</td>
-            <td><span class="prio-medium">中</span></td>
-            <td>代文希</td>
-          </tr>
-          <tr>
-            <td>6</td>
-            <td>1135437929001001471</td>
-            <td class="title-cell">PC-仓储-基础信息-储位-新增/编辑页，动线顺序字段展示错误</td>
-            <td>PC-仓储</td>
-            <td>待确认</td>
-            <td><span class="">低</span></td>
-            <td>彭湘豫</td>
-          </tr>
-          <tr>
-            <td>7</td>
-            <td>1135437929001001498</td>
-            <td class="title-cell">PC-仓储-基础信息-商品-商品名称、基本单位、规格单位、存储条件字段取值/展示异常</td>
-            <td>PC-仓储</td>
-            <td>处理中</td>
-            <td><span class="prio-high">高</span></td>
-            <td>尤威</td>
-          </tr>
-          <tr>
-            <td>8</td>
-            <td>1135437929001001499</td>
-            <td class="title-cell">PC-仓储-基础信息-商品-投影逻辑异常，目前创建商品时未投影到WMS，需要重新再编辑选品库才会投影下来</td>
-            <td>PC-仓储</td>
-            <td>已拒绝</td>
-            <td><span class="prio-high">高</span></td>
-            <td>尤威</td>
-          </tr>
-          <tr>
-            <td>9</td>
-            <td>1135437929001001550</td>
-            <td class="title-cell">C端小程序-下单--商品金额小于优惠券面额，下单生成订单后，优惠券展示  内容异常。</td>
-            <td>C端小程序-下单</td>
-            <td>待确认</td>
-            <td><span class="prio-high">高</span></td>
-            <td>尤威</td>
-          </tr>
-          <tr>
-            <td>10</td>
-            <td>1135437929001001559</td>
-            <td class="title-cell">PC-营销-营销模板-模板配置--设置指定商品可用的优惠券。 问题现象：非指定商品也能使用该优惠券，且优惠券未归类至不可用标签页。</td>
-            <td>PC-营销</td>
-            <td>未解决</td>
-            <td><span class="prio-urgent">紧急</span></td>
-            <td>尤威</td>
-          </tr>
-          <tr>
-            <td>11</td>
-            <td>1135437929001001613</td>
-            <td class="title-cell">PC-仓储-入库-入库单-点击关闭按钮，提示接口不存在</td>
-            <td>PC-仓储</td>
-            <td>待确认</td>
-            <td><span class="prio-high">高</span></td>
-            <td>代文希</td>
-          </tr>
-          <tr>
-            <td>12</td>
-            <td>1135437929001001630</td>
-            <td class="title-cell">审核中心-门店注册审核-编辑，提醒文案错误</td>
-            <td>审核中心-门店注册审核</td>
-            <td>待确认</td>
-            <td><span class="prio-medium">中</span></td>
-            <td>冯菲菲</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="detail-card">
-      <h3>数据未展示/展示不完整 <span class="badge">11条 (5.9%)</span></h3>
+      <h3>数据未展示/展示不完整 <span class="badge">11条 (6.0%)</span></h3>
       <table>
         <thead><tr><th>#</th><th>Bug ID</th><th>标题</th><th>模块</th><th>状态</th><th>优先级</th><th>处理人</th></tr></thead>
         <tbody>
@@ -1867,6 +1727,113 @@
             <td>待确认</td>
             <td><span class="prio-medium">中</span></td>
             <td>王茂林</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="detail-card">
+      <h3>报错/异常/崩溃 <span class="badge">11条 (6.0%)</span></h3>
+      <table>
+        <thead><tr><th>#</th><th>Bug ID</th><th>标题</th><th>模块</th><th>状态</th><th>优先级</th><th>处理人</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>1135437929001000909</td>
+            <td class="title-cell">PC-直播-直播管理-直播场次-新增直播场地关联模版，报错</td>
+            <td>PC-直播</td>
+            <td>已拒绝</td>
+            <td><span class="prio-urgent">紧急</span></td>
+            <td>史书钰</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>1135437929001001017</td>
+            <td class="title-cell">PC-营销-直播营销-直播营销配置-新增优惠券，关联直播，报错</td>
+            <td>PC-营销</td>
+            <td>已拒绝</td>
+            <td><span class="prio-high">高</span></td>
+            <td>史书钰</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>1135437929001001281</td>
+            <td class="title-cell">MDM-PC-仓库管理-仓库列表-创建二号仓库，主体选择已注册完成的仓库主体提交新建后，该仓库分配的账号、密码登录失败</td>
+            <td>MDM-PC</td>
+            <td>待确认</td>
+            <td><span class="prio-high">高</span></td>
+            <td>王茂林</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>1135437929001001369</td>
+            <td class="title-cell">移动端-仓储-入库-收货-点击确认收货按钮时，任务引擎没有配上架任务，提示语需要修改为：任务引擎匹配失败，请联系管理员</td>
+            <td>移动端-仓储</td>
+            <td>待确认</td>
+            <td><span class="prio-medium">中</span></td>
+            <td>代文希</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>1135437929001001471</td>
+            <td class="title-cell">PC-仓储-基础信息-储位-新增/编辑页，动线顺序字段展示错误</td>
+            <td>PC-仓储</td>
+            <td>待确认</td>
+            <td><span class="">低</span></td>
+            <td>彭湘豫</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>1135437929001001498</td>
+            <td class="title-cell">PC-仓储-基础信息-商品-商品名称、基本单位、规格单位、存储条件字段取值/展示异常</td>
+            <td>PC-仓储</td>
+            <td>处理中</td>
+            <td><span class="prio-high">高</span></td>
+            <td>尤威</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>1135437929001001499</td>
+            <td class="title-cell">PC-仓储-基础信息-商品-投影逻辑异常，目前创建商品时未投影到WMS，需要重新再编辑选品库才会投影下来</td>
+            <td>PC-仓储</td>
+            <td>已拒绝</td>
+            <td><span class="prio-high">高</span></td>
+            <td>尤威</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>1135437929001001550</td>
+            <td class="title-cell">C端小程序-下单--商品金额小于优惠券面额，下单生成订单后，优惠券展示  内容异常。</td>
+            <td>C端小程序-下单</td>
+            <td>待确认</td>
+            <td><span class="prio-high">高</span></td>
+            <td>尤威</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>1135437929001001559</td>
+            <td class="title-cell">PC-营销-营销模板-模板配置--设置指定商品可用的优惠券。 问题现象：非指定商品也能使用该优惠券，且优惠券未归类至不可用标签页。</td>
+            <td>PC-营销</td>
+            <td>未解决</td>
+            <td><span class="prio-urgent">紧急</span></td>
+            <td>尤威</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>1135437929001001613</td>
+            <td class="title-cell">PC-仓储-入库-入库单-点击关闭按钮，提示接口不存在</td>
+            <td>PC-仓储</td>
+            <td>待确认</td>
+            <td><span class="prio-high">高</span></td>
+            <td>代文希</td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>1135437929001001630</td>
+            <td class="title-cell">审核中心-门店注册审核-编辑，提醒文案错误</td>
+            <td>审核中心-门店注册审核</td>
+            <td>待确认</td>
+            <td><span class="prio-medium">中</span></td>
+            <td>冯菲菲</td>
           </tr>
         </tbody>
       </table>
@@ -2061,8 +2028,8 @@
 </div>
 
 <script>
-const catLabels = ["数据校验/业务逻辑", "其他", "字段缺失/多余/不一致", "数据展示不正确", "搜索/筛选/查询", "UI/交互/样式", "报错/异常/崩溃", "数据未展示/展示不完整", "删除/状态流转", "提示语/文案问题", "导入/导出/文件上传"];
-const catValues = [32, 31, 24, 21, 21, 16, 12, 11, 7, 7, 4];
+const catLabels = ["数据校验/业务逻辑", "其他", "字段缺失/多余/不一致", "数据展示不正确", "搜索/筛选/查询", "UI/交互/样式", "数据未展示/展示不完整", "报错/异常/崩溃", "删除/状态流转", "提示语/文案问题", "导入/导出/文件上传"];
+const catValues = [32, 31, 24, 20, 20, 16, 11, 11, 7, 7, 4];
 const catColors = ["#5470c6", "#91cc75", "#fac858", "#ee6666", "#73c0de", "#3ba272", "#fc8452", "#9a60b4", "#ea7ccc", "#48b8d0", "#c4ccd3"];
 
 // 饼图
@@ -2073,7 +2040,7 @@ new Chart(document.getElementById('catPie'), {
     responsive: true,
     plugins: {
       legend: { position: 'right', labels: { font: { size: 12 } } },
-      tooltip: { callbacks: { label: ctx => ctx.label + ': ' + ctx.parsed + '条 (' + (ctx.parsed/186*100).toFixed(1) + '%)' } }
+      tooltip: { callbacks: { label: ctx => ctx.label + ': ' + ctx.parsed + '条 (' + (ctx.parsed/183*100).toFixed(1) + '%)' } }
     }
   }
 });
@@ -2097,7 +2064,7 @@ new Chart(document.getElementById('platBar'), {
   type: 'bar',
   data: {
     labels: ["PC端", "MDM", "其他", "C端小程序", "ERP", "移动端"],
-    datasets: [{ label: '缺陷数量', data: [106, 50, 15, 8, 4, 3], backgroundColor: '#5470c6' }]
+    datasets: [{ label: '缺陷数量', data: [104, 49, 15, 8, 4, 3], backgroundColor: '#5470c6' }]
   },
   options: {
     responsive: true,
@@ -2109,7 +2076,7 @@ new Chart(document.getElementById('platBar'), {
 // 堆叠柱状图
 new Chart(document.getElementById('stackBar'), {
   type: 'bar',
-  data: { labels: ["PC端", "MDM", "其他", "C端小程序", "ERP", "移动端"], datasets: [{"label": "数据校验/业务逻辑", "data": [21, 4, 4, 1, 2, 0], "backgroundColor": "#5470c6"}, {"label": "其他", "data": [20, 5, 4, 1, 0, 1], "backgroundColor": "#91cc75"}, {"label": "字段缺失/多余/不一致", "data": [4, 18, 1, 1, 0, 0], "backgroundColor": "#fac858"}, {"label": "数据展示不正确", "data": [8, 10, 0, 1, 1, 1], "backgroundColor": "#ee6666"}, {"label": "搜索/筛选/查询", "data": [16, 4, 1, 0, 0, 0], "backgroundColor": "#73c0de"}, {"label": "UI/交互/样式", "data": [13, 1, 0, 2, 0, 0], "backgroundColor": "#3ba272"}, {"label": "报错/异常/崩溃", "data": [8, 1, 1, 1, 0, 1], "backgroundColor": "#fc8452"}, {"label": "数据未展示/展示不完整", "data": [2, 6, 2, 1, 0, 0], "backgroundColor": "#9a60b4"}, {"label": "删除/状态流转", "data": [5, 1, 0, 0, 1, 0], "backgroundColor": "#ea7ccc"}, {"label": "提示语/文案问题", "data": [5, 0, 2, 0, 0, 0], "backgroundColor": "#48b8d0"}, {"label": "导入/导出/文件上传", "data": [4, 0, 0, 0, 0, 0], "backgroundColor": "#c4ccd3"}] },
+  data: { labels: ["PC端", "MDM", "其他", "C端小程序", "ERP", "移动端"], datasets: [{"label": "数据校验/业务逻辑", "data": [21, 4, 4, 1, 2, 0], "backgroundColor": "#5470c6"}, {"label": "其他", "data": [20, 5, 4, 1, 0, 1], "backgroundColor": "#91cc75"}, {"label": "字段缺失/多余/不一致", "data": [4, 18, 1, 1, 0, 0], "backgroundColor": "#fac858"}, {"label": "数据展示不正确", "data": [8, 9, 0, 1, 1, 1], "backgroundColor": "#ee6666"}, {"label": "搜索/筛选/查询", "data": [15, 4, 1, 0, 0, 0], "backgroundColor": "#73c0de"}, {"label": "UI/交互/样式", "data": [13, 1, 0, 2, 0, 0], "backgroundColor": "#3ba272"}, {"label": "数据未展示/展示不完整", "data": [2, 6, 2, 1, 0, 0], "backgroundColor": "#fc8452"}, {"label": "报错/异常/崩溃", "data": [7, 1, 1, 1, 0, 1], "backgroundColor": "#9a60b4"}, {"label": "删除/状态流转", "data": [5, 1, 0, 0, 1, 0], "backgroundColor": "#ea7ccc"}, {"label": "提示语/文案问题", "data": [5, 0, 2, 0, 0, 0], "backgroundColor": "#48b8d0"}, {"label": "导入/导出/文件上传", "data": [4, 0, 0, 0, 0, 0], "backgroundColor": "#c4ccd3"}] },
   options: {
     responsive: true,
     plugins: { legend: { position: 'bottom', labels: { font: { size: 11 } } } },
@@ -2155,12 +2122,12 @@ new Chart(document.getElementById('stackBar'), {
     <div class="relate-kpi-card"><div class="num">17</div><div class="label">页面内关联分组</div></div>
     <div class="relate-kpi-card"><div class="num">4</div><div class="label">跨页面关联分组</div></div>
     <div class="relate-kpi-card"><div class="num">58</div><div class="label">关联覆盖缺陷数</div></div>
-    <div class="relate-kpi-card"><div class="num">31%</div><div class="label">覆盖率</div></div>
+    <div class="relate-kpi-card"><div class="num">32%</div><div class="label">覆盖率</div></div>
   </div>
 
   <div class="relate-summary">
     <h3>TOP 关联分组（关联数最多 = 批量修复价值最高）</h3>
-    <ul><li><span class="sum-tag">#18</span> <strong>「字段与PRD不一致」跨页面共性问题</strong> — 跨页面共性（7条）</li><li><span class="sum-tag">#19</span> <strong>「编码唯一性校验」跨页面共性问题</strong> — 跨页面共性（6条）</li><li><span class="sum-tag">#7</span> <strong>PC-仓储-权限管理-用户</strong> — 权限/数据隔离（4条）</li><li><span class="sum-tag">#20</span> <strong>「提示语不正确/需修改」跨页面共性问题</strong> — 跨页面共性（4条）</li><li><span class="sum-tag">#1</span> <strong>PC-仓储-基础信息-容器</strong> — 其他（3条）</li><li><span class="sum-tag">#8</span> <strong>PC-营销-营销模板-模板配置</strong> — 其他（3条）</li><li><span class="sum-tag">#9</span> <strong>PC-仓储-任务-任务组管理</strong> — 其他（3条）</li><li><span class="sum-tag">#11</span> <strong>PC-直播-直播管理-直播中控</strong> — 其他（3条）</li><li><span class="sum-tag">#13</span> <strong>PC-仓储-基础信息-商品</strong> — 其他（3条）</li><li><span class="sum-tag">#2</span> <strong>PC-仓储-基础信息-容器</strong> — 必填校验缺失（2条）</li><li><span class="sum-tag">#3</span> <strong>PC-仓储-基础信息-容器</strong> — 弹窗/编辑字段不一致（2条）</li><li><span class="sum-tag">#4</span> <strong>PC-仓储-基础信息-储位</strong> — 弹窗/编辑字段不一致（2条）</li><li><span class="sum-tag">#5</span> <strong>PC-直播-直播商品-直播排品</strong> — 其他（2条）</li><li><span class="sum-tag">#6</span> <strong>PC-仓储-出库-出库单</strong> — 其他（2条）</li><li><span class="sum-tag">#10</span> <strong>PC-仓储-策略管理-波次模板</strong> — 其他（2条）</li></ul>
+    <ul><li><span class="sum-tag">#18</span> <strong>「字段与PRD不一致」跨页面共性问题</strong> — 跨页面共性（7条）</li><li><span class="sum-tag">#19</span> <strong>「编码唯一性校验」跨页面共性问题</strong> — 跨页面共性（6条）</li><li><span class="sum-tag">#7</span> <strong>PC-仓储-权限管理-用户</strong> — 权限/数据隔离（4条）</li><li><span class="sum-tag">#20</span> <strong>「提示语不正确/需修改」跨页面共性问题</strong> — 跨页面共性（4条）</li><li><span class="sum-tag">#1</span> <strong>PC-仓储-基础信息-容器</strong> — 其他（3条）</li><li><span class="sum-tag">#8</span> <strong>PC-营销-营销模板-模板配置</strong> — 其他（3条）</li><li><span class="sum-tag">#9</span> <strong>PC-仓储-任务-任务组管理</strong> — 其他（3条）</li><li><span class="sum-tag">#11</span> <strong>PC-直播-直播管理-直播中控</strong> — 其他（3条）</li><li><span class="sum-tag">#12</span> <strong>PC-仓储-基础信息-商品</strong> — 其他（3条）</li><li><span class="sum-tag">#2</span> <strong>PC-仓储-基础信息-容器</strong> — 必填校验缺失（2条）</li><li><span class="sum-tag">#3</span> <strong>PC-仓储-基础信息-容器</strong> — 弹窗/编辑字段不一致（2条）</li><li><span class="sum-tag">#4</span> <strong>PC-仓储-基础信息-储位</strong> — 弹窗/编辑字段不一致（2条）</li><li><span class="sum-tag">#5</span> <strong>PC-仓储-出库-出库单</strong> — 其他（2条）</li><li><span class="sum-tag">#6</span> <strong>PC-直播-直播商品-直播排品</strong> — 其他（2条）</li><li><span class="sum-tag">#10</span> <strong>PC-仓储-策略管理-波次模板</strong> — 其他（2条）</li></ul>
   </div>
 
   <h3 class="sub-heading">跨页面共性问题（4 组）</h3>
@@ -2381,26 +2348,6 @@ new Chart(document.getElementById('stackBar'), {
     <div class="relate-card" style="border-left: 4px solid #73c0de;">
       <div class="relate-header">
         <span class="relate-tag" style="background:#73c0de;">#5</span>
-        <span class="relate-page">PC-直播-直播商品-直播排品</span>
-        <span class="relate-issue">其他</span>
-        <span class="relate-count">2条关联</span>
-      </div>
-      <table class="relate-table">
-        <thead><tr><th>#</th><th>Bug ID</th><th>标题</th></tr></thead>
-        <tbody><tr>
-            <td>1</td>
-            <td class="bug-id">1135437929001000784</td>
-            <td class="title-cell">PC-直播-直播商品-直播排品-多规格商品时，规格应该支持展开/折叠 </td>
-        </tr><tr>
-            <td>2</td>
-            <td class="bug-id">1135437929001001090</td>
-            <td class="title-cell">PC-直播-直播商品-直播排品-商品已在选品库录入售价，直播上架货品时，系统提示售价未配置 </td>
-        </tr></tbody>
-      </table>
-    </div>
-    <div class="relate-card" style="border-left: 4px solid #fc8452;">
-      <div class="relate-header">
-        <span class="relate-tag" style="background:#fc8452;">#6</span>
         <span class="relate-page">PC-仓储-出库-出库单</span>
         <span class="relate-issue">其他</span>
         <span class="relate-count">2条关联</span>
@@ -2415,6 +2362,26 @@ new Chart(document.getElementById('stackBar'), {
             <td>2</td>
             <td class="bug-id">1135437929001001616</td>
             <td class="title-cell">PC-仓储-出库-出库单-单据时间字段和查询条件去除 </td>
+        </tr></tbody>
+      </table>
+    </div>
+    <div class="relate-card" style="border-left: 4px solid #fc8452;">
+      <div class="relate-header">
+        <span class="relate-tag" style="background:#fc8452;">#6</span>
+        <span class="relate-page">PC-直播-直播商品-直播排品</span>
+        <span class="relate-issue">其他</span>
+        <span class="relate-count">2条关联</span>
+      </div>
+      <table class="relate-table">
+        <thead><tr><th>#</th><th>Bug ID</th><th>标题</th></tr></thead>
+        <tbody><tr>
+            <td>1</td>
+            <td class="bug-id">1135437929001000784</td>
+            <td class="title-cell">PC-直播-直播商品-直播排品-多规格商品时，规格应该支持展开/折叠 </td>
+        </tr><tr>
+            <td>2</td>
+            <td class="bug-id">1135437929001001090</td>
+            <td class="title-cell">PC-直播-直播商品-直播排品-商品已在选品库录入售价，直播上架货品时，系统提示售价未配置 </td>
         </tr></tbody>
       </table>
     </div>
@@ -2541,26 +2508,6 @@ new Chart(document.getElementById('stackBar'), {
     <div class="relate-card" style="border-left: 4px solid #ee6666;">
       <div class="relate-header">
         <span class="relate-tag" style="background:#ee6666;">#12</span>
-        <span class="relate-page">MDM-PC-商品中心-商品列表-添加商品</span>
-        <span class="relate-issue">其他</span>
-        <span class="relate-count">2条关联</span>
-      </div>
-      <table class="relate-table">
-        <thead><tr><th>#</th><th>Bug ID</th><th>标题</th></tr></thead>
-        <tbody><tr>
-            <td>1</td>
-            <td class="bug-id">1135437929001001341</td>
-            <td class="title-cell">MDM-PC-商品中心-商品列表-添加商品--是否到店创建的时候默认是否 </td>
-        </tr><tr>
-            <td>2</td>
-            <td class="bug-id">1135437929001001400</td>
-            <td class="title-cell">MDM-PC-商品中心-商品列表-添加商品-编辑商品 积分+现金 缺掉一个输入框 可编辑售价 </td>
-        </tr></tbody>
-      </table>
-    </div>
-    <div class="relate-card" style="border-left: 4px solid #fac858;">
-      <div class="relate-header">
-        <span class="relate-tag" style="background:#fac858;">#13</span>
         <span class="relate-page">PC-仓储-基础信息-商品</span>
         <span class="relate-issue">其他</span>
         <span class="relate-count">3条关联</span>
@@ -2582,9 +2529,9 @@ new Chart(document.getElementById('stackBar'), {
         </tr></tbody>
       </table>
     </div>
-    <div class="relate-card" style="border-left: 4px solid #91cc75;">
+    <div class="relate-card" style="border-left: 4px solid #fac858;">
       <div class="relate-header">
-        <span class="relate-tag" style="background:#91cc75;">#14</span>
+        <span class="relate-tag" style="background:#fac858;">#13</span>
         <span class="relate-page">PC-仓储-任务-任务管理</span>
         <span class="relate-issue">其他</span>
         <span class="relate-count">2条关联</span>
@@ -2602,9 +2549,9 @@ new Chart(document.getElementById('stackBar'), {
         </tr></tbody>
       </table>
     </div>
-    <div class="relate-card" style="border-left: 4px solid #73c0de;">
+    <div class="relate-card" style="border-left: 4px solid #91cc75;">
       <div class="relate-header">
-        <span class="relate-tag" style="background:#73c0de;">#15</span>
+        <span class="relate-tag" style="background:#91cc75;">#14</span>
         <span class="relate-page">PC-商品-货架商品-商品列表</span>
         <span class="relate-issue">其他</span>
         <span class="relate-count">2条关联</span>
@@ -2619,6 +2566,26 @@ new Chart(document.getElementById('stackBar'), {
             <td>2</td>
             <td class="bug-id">1135437929001000677</td>
             <td class="title-cell">PC-商品-货架商品-商品列表-中央商品库的商品状态为已停售，货架商品中的商品状态应该为：下架 </td>
+        </tr></tbody>
+      </table>
+    </div>
+    <div class="relate-card" style="border-left: 4px solid #73c0de;">
+      <div class="relate-header">
+        <span class="relate-tag" style="background:#73c0de;">#15</span>
+        <span class="relate-page">MDM-PC-商品中心-商品列表-添加商品</span>
+        <span class="relate-issue">其他</span>
+        <span class="relate-count">2条关联</span>
+      </div>
+      <table class="relate-table">
+        <thead><tr><th>#</th><th>Bug ID</th><th>标题</th></tr></thead>
+        <tbody><tr>
+            <td>1</td>
+            <td class="bug-id">1135437929001001341</td>
+            <td class="title-cell">MDM-PC-商品中心-商品列表-添加商品--是否到店创建的时候默认是否 </td>
+        </tr><tr>
+            <td>2</td>
+            <td class="bug-id">1135437929001001400</td>
+            <td class="title-cell">MDM-PC-商品中心-商品列表-添加商品-编辑商品 积分+现金 缺掉一个输入框 可编辑售价 </td>
         </tr></tbody>
       </table>
     </div>
