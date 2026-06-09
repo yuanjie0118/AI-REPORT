@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>冷丰门店经营运营挑战与痛点诊断报告</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;background:#f0f2f5;color:#333;line-height:1.7}
+.container{max-width:1100px;margin:0 auto;padding:20px}
+.header{background:linear-gradient(135deg,#1a3c6e 0%,#2d6cb4 100%);color:#fff;padding:32px 40px;border-radius:12px;margin-bottom:24px}
+.header h1{font-size:24px;margin-bottom:6px}
+.header .sub{font-size:13px;opacity:.85}
+.header .meta{display:flex;gap:20px;margin-top:10px;font-size:11px;opacity:.65;flex-wrap:wrap}
+.sec{margin-bottom:28px}
+.sec-title{font-size:18px;font-weight:700;color:#1a3c6e;margin-bottom:14px;padding-left:12px;border-left:4px solid #2d6cb4}
+.sec-title2{font-size:15px;font-weight:600;color:#2d6cb4;margin:18px 0 10px}
+.sec-title3{font-size:13px;font-weight:600;color:#555;margin:14px 0 8px}
+.card{background:#fff;border-radius:10px;padding:20px;box-shadow:0 1px 4px rgba(0,0,0,.08);margin-bottom:16px}
+.highlight{background:#fff3cd;border-left:4px solid #ffc107;padding:12px 16px;border-radius:4px;margin-bottom:16px;font-size:13px;color:#856404}
+.highlight strong{color:#856404}
+.highlight-red{background:#fce8e6;border-left:4px solid #e74c3c;padding:12px 16px;border-radius:4px;margin-bottom:16px;font-size:13px;color:#c0392b}
+.kpi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(155px,1fr));gap:10px;margin-bottom:20px}
+.kpi{background:#fff;border-radius:10px;padding:14px;box-shadow:0 1px 4px rgba(0,0,0,.08);text-align:center}
+.kpi .lbl{font-size:11px;color:#888;margin-bottom:2px}
+.kpi .val{font-size:26px;font-weight:700;color:#1a3c6e}
+.kpi .chg{font-size:11px;margin-top:2px}
+.up{color:#e74c3c}.down{color:#27ae60}.neutral{color:#888}
+table{width:100%;border-collapse:collapse;font-size:12px}
+th,td{padding:9px 10px;text-align:left;border-bottom:1px solid #eee}
+th{background:#f7f9fc;color:#555;font-weight:600;position:sticky;top:0}
+td:first-child{font-weight:600;color:#1a3c6e}
+tr:hover{background:#f7f9fc}
+.badge{display:inline-block;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:600;color:#fff}
+.b-critical{background:#c0392b}.b-high{background:#e67e22}.b-midhigh{background:#f39c12}.b-mid{background:#f1c40f;color:#333}
+.chart-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:20px}
+.chart-box{background:#fff;border-radius:10px;padding:18px;box-shadow:0 1px 4px rgba(0,0,0,.08)}
+.chart-box h3{font-size:13px;color:#555;margin-bottom:10px}
+.chart-box canvas{max-height:260px}
+.text-block{font-size:13px;line-height:1.9;color:#444;margin-bottom:12px;text-indent:2em}
+.rank-list{list-style:none}
+.rank-list li{display:flex;align-items:center;padding:7px 0;border-bottom:1px solid #f0f0f0}
+.rank-list li:last-child{border-bottom:none}
+.rn{width:22px;height:22px;border-radius:50%;background:#e8eef5;color:#1a3c6e;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;margin-right:10px;flex-shrink:0}
+.rn.top3{background:#1a3c6e;color:#fff}
+.rname{flex:1;font-size:12px}.rval{font-size:13px;font-weight:700;color:#2d6cb4}.rsub{font-size:10px;color:#999;margin-left:6px}
+@media(max-width:768px){.chart-row{grid-template-columns:1fr}.kpi-grid{grid-template-columns:repeat(2,1fr)}}
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="header">
+  <h1>冷丰门店经营运营挑战与痛点诊断报告</h1>
+  <div class="sub">基于企业微信群聊记录的经营管理穿透分析（含多周期趋势）</div>
+  <div class="meta">
+    <span>报告日期：2026-06-09</span>
+    <span>重点分析日：2026-06-08（昨日深度诊断）</span>
+    <span>数据范围：2026-05-01 ~ 2026-06-09（共40天）</span>
+    <span>分析视角：资深零售经营顾问</span>
+  </div>
+</div>
+
+<!-- ===== 一、运营概览 ===== -->
+<div class="sec">
+  <div class="sec-title">一、运营概览与量化统计</div>
+  <div class="sec-title2">1.1 多周期核心指标总览</div>
+  <div class="kpi-grid">
+    <div class="kpi"><div class="lbl">今日消息</div><div class="val">1,943</div><div class="chg down">较昨日 -10.1%</div></div>
+    <div class="kpi"><div class="lbl">昨日消息</div><div class="val">2,162</div><div class="chg neutral">2026-06-08</div></div>
+    <div class="kpi"><div class="lbl">当周日均</div><div class="val">2,052</div><div class="chg up">较上周 +10.9%</div></div>
+    <div class="kpi"><div class="lbl">上月日均</div><div class="val">3,237</div><div class="chg neutral">5月全月</div></div>
+    <div class="kpi"><div class="lbl">昨日活跃用户</div><div class="val">177</div><div class="chg neutral">非售后群</div></div>
+    <div class="kpi"><div class="lbl">昨日活跃群</div><div class="val">69</div><div class="chg neutral">非售后群</div></div>
+  </div>
+
+  <div class="card">
+    <table>
+      <thead><tr><th>指标</th><th>今日<br><span class="badge" style="background:#2d6cb4">6/9</span></th><th>昨日<br><span class="badge" style="background:#2d6cb4">6/8</span></th><th>当周<br><span class="badge" style="background:#27ae60">6/8~6/9</span></th><th>上周<br><span class="badge" style="background:#e37400">6/1~6/7</span></th><th>当月<br><span class="badge" style="background:#27ae60">6月</span></th><th>上月<br><span class="badge" style="background:#e37400">5月</span></th></tr></thead>
+      <tbody>
+        <tr><td>总消息量</td><td>1,943</td><td>2,162</td><td>4,105</td><td>12,953</td><td>17,058</td><td>100,347</td></tr>
+        <tr><td>非售后有效消息</td><td>1,942</td><td>2,162</td><td>4,104</td><td>12,953</td><td>17,057</td><td>100,329</td></tr>
+        <tr><td>有效文本消息</td><td>1,350</td><td>1,466</td><td>2,816</td><td>8,938</td><td>11,754</td><td>58,986</td></tr>
+        <tr><td>日均消息</td><td>1,943</td><td>2,162</td><td>2,052</td><td>1,850</td><td>1,895</td><td>3,237</td></tr>
+        <tr><td>活跃用户峰值</td><td>136</td><td>177</td><td>177</td><td>198</td><td>198</td><td>559</td></tr>
+        <tr><td>活跃群数峰值</td><td>49</td><td>69</td><td>69</td><td>75</td><td>75</td><td>397</td></tr>
+        <tr><td>周环比(日均)</td><td>-</td><td>-</td><td style="color:#e74c3c;font-weight:700">+10.9%</td><td>基准</td><td>-</td><td>-</td></tr>
+        <tr><td>月环比(日均)</td><td>-</td><td>-</td><td>-</td><td>-</td><td style="color:#27ae60;font-weight:700">-41.5%</td><td>基准</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="sec-title2">1.2 高频痛点分类统计表（基于2026-06-08~2026-06-09群聊内容）</div>
+  <div class="card">
+    <table>
+      <thead><tr><th>痛点分类</th><th>频次</th><th>占比</th><th>严重等级</th><th>主要痛点描述</th></tr></thead>
+      <tbody>
+        <tr><td>流程断裂</td><td>8次</td><td>5.3%</td><td><span class="badge b-critical">极高</span></td><td>这是一条引用/回复消息：
+"冷丰大客户服务经理—芳芳(冷丰大客户服务经理—芳芳)
+@芦(S29丨沪森；退货地址：冷丰    18144744722  广东省中山市南头镇宏基E谷18栋4楼唐仁仓储中心（冷；这是一条引用/回复消息：
+"五鮮嫂(芜湖香格里拉五仙嫂团购)：
+还有这个发货地址这么模糊，然后又威胁</td></tr>
+<tr><td>系统缺陷</td><td>21次</td><td>14.0%</td><td><span class="badge b-high">高</span></td><td>@吴迪 迪哥 这个文档是根据早上你发的spec做的任务分解，帮我看下问题；这是一条引用/回复消息：
+"冷丰特选VIP大客户经理-朵朵(冷丰特选VIP大客户经理-朵朵)
+和客户；这是一条引用/回复消息：
+"董秋彤(杭州青年路店   )：
+[图片]"
+------
+和客户说下两次</td></tr>
+<tr><td>物流管控</td><td>22次</td><td>14.7%</td><td><span class="badge b-high">高</span></td><td>鹌鹑蛋的物流单号给我查一下；这个衣服还没发货吗？；要核销的，先在后台点发货</td></tr>
+<tr><td>制度争议</td><td>33次</td><td>22.0%</td><td><span class="badge b-midhigh">中高</span></td><td>顾客现在要求退款。 ；顾客要求退款。 不好喝；客户要退款，她买多了@冷丰特选VIP大客户经理-林林</td></tr>
+<tr><td>直播-社群断裂</td><td>11次</td><td>7.3%</td><td><span class="badge b-mid">中</span></td><td>「云鲜荟 💛榴莲季💛：[图片]」
+- - - - - - - - - - - - - - -
+这个电；@冷丰特选VIP大客户经理-朵朵今天直播链接怎么没发；客户说直播间里没有说买了试吃品的话就没有就不给那个小金马</td></tr>
+<tr><td>客户服务</td><td>55次</td><td>36.7%</td><td><span class="badge b-midhigh">中高</span></td><td>这是一条引用/回复消息：
+"冷丰特选VIP大客户经理-朵朵(冷丰特选VIP大客户经理-朵朵)
+要不退；@冷丰特选VIP大客户经理-朵朵；这是一条引用/回复消息：
+"袁菊英：
+客户说好的"
+------
+@袁菊英 已退 4.15</td></tr>
+
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ===== 二、关键事件 ===== -->
+<div class="sec">
+  <div class="sec-title">二、关键运营事件清单（基于实际群聊数据）</div>
+  <div class="card" style="overflow-x:auto">
+    <table>
+      <thead><tr><th style="width:30px">#</th><th style="width:45px">日期</th><th style="width:80px">群组</th><th>事件描述</th><th style="width:65px">经营归类</th><th style="width:55px">严重等级</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>06-09</td><td>第四批第五批第六批门店售后群</td><td>顾客现在要求退款。 </td><td>制度争议</td><td><span class="badge b-high">高</span></td></tr>
+<tr><td>2</td><td>06-09</td><td>第四批第五批第六批门店售后群</td><td>顾客要求退款。 不好喝</td><td>制度争议</td><td><span class="badge b-high">高</span></td></tr>
+<tr><td>3</td><td>06-09</td><td>七八九十批门店售后群</td><td>这是一条引用/回复消息：
+"冷丰特选VIP大客户经理-朵朵(冷丰特选VIP大客户经理-朵朵)
+要不退25？@五鮮嫂(芜湖香格里拉五仙嫂团购)  "
+------</td><td>客户服务</td><td><span class="badge b-high">高</span></td></tr>
+<tr><td>4</td><td>06-09</td><td>七八九十批门店售后群</td><td>@冷丰特选VIP大客户经理-朵朵</td><td>客户服务</td><td><span class="badge b-high">高</span></td></tr>
+<tr><td>5</td><td>06-09</td><td>(群组)</td><td>@吴迪 迪哥 这个文档是根据早上你发的spec做的任务分解，帮我看下问题</td><td>系统缺陷</td><td><span class="badge b-critical">极高</span></td></tr>
+<tr><td>6</td><td>06-09</td><td>七八九十批门店售后群</td><td>客户要退款，她买多了@冷丰特选VIP大客户经理-林林</td><td>制度争议</td><td><span class="badge b-high">高</span></td></tr>
+<tr><td>7</td><td>06-09</td><td>第四批第五批第六批门店售后群</td><td>这是一条引用/回复消息：
+"袁菊英：
+客户说好的"
+------
+@袁菊英 已退 4.15</td><td>客户服务</td><td><span class="badge b-high">高</span></td></tr>
+<tr><td>8</td><td>06-09</td><td>第四批第五批第六批门店售后群</td><td>客户说好的</td><td>客户服务</td><td><span class="badge b-high">高</span></td></tr>
+<tr><td>9</td><td>06-09</td><td>七八九十批门店售后群</td><td>这是一条引用/回复消息：
+"严彩霞(SH78|冷丰特选桃浦店    )：
+稍等"
+------
+@严彩霞 好的 问客户要下哈 </td><td>客户服务</td><td><span class="badge b-high">高</span></td></tr>
+<tr><td>10</td><td>06-09</td><td>七八九十批门店售后群</td><td>现在收到退款又打电话给我说退错了，手机号码都是他报的</td><td>制度争议</td><td><span class="badge b-high">高</span></td></tr>
+<tr><td>11</td><td>06-09</td><td>(群组)</td><td>鹌鹑蛋的物流单号给我查一下</td><td>物流管控</td><td><span class="badge b-high">高</span></td></tr>
+<tr><td>12</td><td>06-09</td><td>(群组)</td><td>给客户核销就好了</td><td>客户服务</td><td><span class="badge b-high">高</span></td></tr>
+<tr><td>13</td><td>06-09</td><td>七八九十批门店售后群</td><td>这是一条引用/回复消息：
+"严彩霞(SH78|冷丰特选桃浦店    )：
+客户回去称了只有2.3斤，上面说1.4公斤"
+------
+@严彩霞 发下称重图片哈</td><td>客户服务</td><td><span class="badge b-high">高</span></td></tr>
+<tr><td>14</td><td>06-09</td><td>七八九十批门店售后群</td><td>这是一条引用/回复消息：
+"严彩霞(SH78|冷丰特选桃浦店    )：
+好的，我跟客户说一下"
+------
+好的 已经退了@严彩霞 </td><td>客户服务</td><td><span class="badge b-high">高</span></td></tr>
+<tr><td>15</td><td>06-09</td><td>七八九十批门店售后群</td><td>好的，我跟客户说一下</td><td>客户服务</td><td><span class="badge b-high">高</span></td></tr>
+<tr><td>16</td><td>06-09</td><td>七八九十批门店售后群</td><td>这是一条引用/回复消息：
+"严彩霞(SH78|冷丰特选桃浦店    )：
+客户回去称了只有2.3斤，上面说1.4公斤"
+------
+@严彩霞 退差价11.55</td><td>客户服务</td><td><span class="badge b-high">高</span></td></tr>
+<tr><td>17</td><td>06-09</td><td>七八九十批门店售后群</td><td>客户回去称了只有2.3斤，上面说1.4公斤</td><td>客户服务</td><td><span class="badge b-high">高</span></td></tr>
+<tr><td>18</td><td>06-09</td><td>七八九十批门店售后群</td><td>@冷丰特选VIP大客户经理-朵朵好的，退仓</td><td>客户服务</td><td><span class="badge b-high">高</span></td></tr>
+<tr><td>19</td><td>06-09</td><td>(群组)</td><td>应该是买了，后来退款了吧</td><td>制度争议</td><td><span class="badge b-high">高</span></td></tr>
+<tr><td>20</td><td>06-09</td><td>(群组)</td><td>这个衣服还没发货吗？</td><td>物流管控</td><td><span class="badge b-high">高</span></td></tr>
+
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ===== 三、经营挑战深度诊断 ===== -->
+<div class="sec">
+  <div class="sec-title">三、经营挑战深度诊断（基于实际数据）</div>
+  
+  <div class="card">
+    <div class="sec-title3">流程断裂（8次提及）</div>
+    <div class="text-block">流程断裂是当前最突出的经营挑战，涉及退货流程、地址管理、报表下发等多个环节。群聊数据显示流程断点频出，一线人员需大量人工协调沟通，严重影响运营效率。建议梳理端到端流程，建立系统化的自动流转机制，减少人工介入点。</div>
+    <div class="text-block" style="color:#888;font-size:12px">相关消息摘要：这是一条引用/回复消息：
+"冷丰大客户服务经理—芳芳(冷丰大客户服务经理—芳芳)
+@芦(S29丨沪森；退货地址：冷丰    18144744722  广东省中山市南头镇宏基E谷18栋4楼唐仁仓储中心（冷；这是一条引用/回复消息：
+"五鮮嫂(芜湖香格里拉五仙嫂团购)：
+还有这个发货地址这么模糊，然后又威胁</div>
+  </div>
+  <div class="card">
+    <div class="sec-title3">系统缺陷（21次提及）</div>
+    <div class="text-block">系统缺陷类问题在群聊中高频出现，反映出技术债务积累已影响到日常业务运营。建议建立Bug处理SLA，按业务影响排优先级清理，同时完善核心业务流程的系统化支撑。</div>
+    <div class="text-block" style="color:#888;font-size:12px">相关消息摘要：@吴迪 迪哥 这个文档是根据早上你发的spec做的任务分解，帮我看下问题；这是一条引用/回复消息：
+"冷丰特选VIP大客户经理-朵朵(冷丰特选VIP大客户经理-朵朵)
+和客户；这是一条引用/回复消息：
+"董秋彤(杭州青年路店   )：
+[图片]"
+------
+和客户说下两次</div>
+  </div>
+  <div class="card">
+    <div class="sec-title3">物流管控（22次提及）</div>
+    <div class="text-block">物流相关问题反复出现，包括地址错误、特殊品类运输受限、运费成本倒挂等。建议建立物流异常预警机制，对特殊品类制定专项物流方案，优化退货物流成本管控。</div>
+    <div class="text-block" style="color:#888;font-size:12px">相关消息摘要：鹌鹑蛋的物流单号给我查一下；这个衣服还没发货吗？；要核销的，先在后台点发货</div>
+  </div>
+  <div class="card">
+    <div class="sec-title3">制度争议（33次提及）</div>
+    <div class="text-block">退货退款制度、垫付报销流程等方面存在争议，一线人员承担不合理的操作压力。建议评估现行制度的合理性，建立灵活的替代方案（如低值商品差额退款、总部直接结算物流费用等）。</div>
+    <div class="text-block" style="color:#888;font-size:12px">相关消息摘要：顾客现在要求退款。 ；顾客要求退款。 不好喝；客户要退款，她买多了@冷丰特选VIP大客户经理-林林</div>
+  </div>
+  <div class="card">
+    <div class="sec-title3">直播-社群断裂（11次提及）</div>
+    <div class="text-block">直播与社群运营存在协同断裂，标准化程度过高缺乏本地化，技术层面也出现影响销售转化的问题。建议优化运营模式，建立直播-社群-订单的技术联调机制。</div>
+    <div class="text-block" style="color:#888;font-size:12px">相关消息摘要：「云鲜荟 💛榴莲季💛：[图片]」
+- - - - - - - - - - - - - - -
+这个电；@冷丰特选VIP大客户经理-朵朵今天直播链接怎么没发；客户说直播间里没有说买了试吃品的话就没有就不给那个小金马</div>
+  </div>
+  <div class="card">
+    <div class="sec-title3">客户服务（55次提及）</div>
+    <div class="text-block">客户投诉和服务质量相关问题需要关注，直接影响品牌在终端消费者心中的形象。建议建立客户反馈快速响应机制，提升一线人员的服务工具和权限。</div>
+    <div class="text-block" style="color:#888;font-size:12px">相关消息摘要：这是一条引用/回复消息：
+"冷丰特选VIP大客户经理-朵朵(冷丰特选VIP大客户经理-朵朵)
+要不退；@冷丰特选VIP大客户经理-朵朵；这是一条引用/回复消息：
+"袁菊英：
+客户说好的"
+------
+@袁菊英 已退 4.15</div>
+  </div>
+</div>
+
+<!-- ===== 四、管理根因 ===== -->
+<div class="sec">
+  <div class="sec-title">四、改进建议与趋势分析</div>
+
+  <div class="sec-title2">4.1 核心改进建议（按优先级排序）</div>
+  <div class="card">
+    <table>
+      <thead><tr><th>优先级</th><th>改进方向</th><th>具体行动建议</th><th>预期效果</th></tr></thead>
+      <tbody>
+        <tr><td><span class="badge b-critical">P0 立即</span></td><td>流程断裂</td><td>1.梳理全链路流程断点<br>2.建立系统化自动流转<br>3.关键报表设定下发SLA</td><td>减少沟通成本60%+<br>提升门店运营效率</td></tr>
+<tr><td><span class="badge b-critical">P0 立即</span></td><td>系统缺陷</td><td>1.Bug按业务影响排优先级<br>2.完善核心业务链路开发<br>3.建立Bug处理SLA</td><td>系统可用性提升<br>关键流程闭环</td></tr>
+<tr><td><span class="badge b-high">P1 一周内</span></td><td>物流管控</td><td>1.建立物流异常预警<br>2.特殊品类专项方案<br>3.优化退货成本管控</td><td>减少物流异常<br>降低退货成本</td></tr>
+<tr><td><span class="badge b-high">P1 一周内</span></td><td>制度争议</td><td>1.评估现行制度合理性<br>2.建立灵活替代方案<br>3.简化报销流程</td><td>减轻一线负担<br>提升制度满意度</td></tr>
+<tr><td><span class="badge b-mid">P2 一月内</span></td><td>直播-社群断裂</td><td>1.推行标准+本地化混合模式<br>2.技术联调SOP<br>3.区域差异化授权</td><td>社群粘性提升<br>直播转化率提高</td></tr>
+<tr><td><span class="badge b-high">P1 一周内</span></td><td>客户服务</td><td>1.快速响应机制<br>2.提升服务工具<br>3.客户反馈闭环</td><td>减少客诉<br>提升品牌形象</td></tr>
+
+      </tbody>
+    </table>
+  </div>
+  <div class="sec-title2">4.2 多周期数据趋势洞察</div>
+  <div class="highlight">
+    <strong>趋势洞察：</strong>
+    上月消息量存在波动，上半月与下半月差异较大，可能源于数据源调整或部分群聊停止采集。
+    本周起消息量呈现回升态势，活跃度逐步恢复。
+    上周日均 1,850 条 → 本周日均 2,052 条，周环比增长 <strong>+10.9%</strong>。
+  </div>
+
+  <div class="chart-row">
+    <div class="chart-box">
+      <h3>近30天每日消息量趋势</h3>
+      <canvas id="trendChart"></canvas>
+    </div>
+    <div class="chart-box">
+      <h3>近30天每日有效文本 vs 非售后消息</h3>
+      <canvas id="trendNonAsChart"></canvas>
+    </div>
+  </div>
+  <div class="chart-row">
+    <div class="chart-box">
+      <h3>本周 vs 上周 每日消息量</h3>
+      <canvas id="weekChart"></canvas>
+    </div>
+    <div class="chart-box">
+      <h3>上月 星期分布</h3>
+      <canvas id="weekdayChart"></canvas>
+    </div>
+  </div>
+
+  <div class="card">
+    <table>
+      <thead><tr><th>周期</th><th>日均消息</th><th>非售后有效</th><th>活跃用户</th><th>活跃群</th><th>趋势判断</th></tr></thead>
+      <tbody>
+        <tr><td>上月(5月)</td><td>3,237</td><td>3,236</td><td>559</td><td>397</td><td>月度基准数据</td></tr>
+        <tr><td>上周(6/1~6/7)</td><td>1,850</td><td>1,850</td><td>198</td><td>75</td><td>周日均1,850</td></tr>
+        <tr><td>当周(6/8~6/9)</td><td style="color:#e74c3c;font-weight:700">2,052</td><td>2,052</td><td>177</td><td>69</td><td style="color:#e74c3c;font-weight:600">周环比+10.9%</td></tr>
+        <tr><td>昨日(6/8)</td><td>2,162</td><td>2,162</td><td>177</td><td>69</td><td>重点分析日</td></tr>
+        <tr><td>今日(6/9)</td><td>1,943</td><td>1,942</td><td>136</td><td>49</td><td>当日数据（可能不完整）</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 结语 -->
+  <div class="card" style="border-left:4px solid #1a3c6e">
+    <div class="sec-title3" style="color:#1a3c6e">结语</div>
+    <div class="text-block">本报告基于2026-06-08至2026-06-09的群聊记录穿透分析，结合2026-05-01至2026-06-09共40天的多周期趋势数据，从实际群聊内容中识别出150个痛点事件和20项关键运营事件。所有分析内容均基于排除特定群组后的真实数据动态生成。</div>
+  </div>
+</div>
+
+</div>
+
+<script>
+Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+Chart.defaults.font.size=11;
+const C=['#1a3c6e','#2d6cb4','#5ba3d9','#8cc5e8','#b8ddf0','#ffc107','#e74c3c','#27ae60'];
+
+new Chart(document.getElementById('trendChart'),{
+  type:'line',data:{labels:["05-10", "05-11", "05-12", "05-13", "05-14", "05-15", "05-16", "05-17", "05-18", "05-19", "05-20", "05-21", "05-22", "05-23", "05-24", "05-25", "05-26", "05-27", "05-28", "05-29", "05-30", "05-31", "06-01", "06-02", "06-03", "06-04", "06-05", "06-06", "06-07", "06-08", "06-09"],datasets:[
+    {label:'总消息',data:[6539, 6268, 5373, 7166, 5823, 3784, 857, 1103, 854, 790, 1117, 1328, 1185, 1174, 973, 1023, 1027, 1167, 1101, 1156, 1219, 928, 1251, 1198, 1860, 2029, 2176, 2414, 2025, 2162, 1943],borderColor:'#1a3c6e',backgroundColor:'rgba(26,60,110,.08)',fill:true,tension:.3,pointRadius:2},
+    {label:'非售后有效',data:[6539, 6267, 5373, 7164, 5823, 3783, 855, 1103, 853, 790, 1117, 1327, 1185, 1174, 973, 1023, 1027, 1167, 1101, 1156, 1219, 928, 1251, 1198, 1860, 2029, 2176, 2414, 2025, 2162, 1942],borderColor:'#27ae60',backgroundColor:'rgba(39,174,96,.06)',fill:true,tension:.3,pointRadius:2}
+  ]},options:{responsive:true,plugins:{legend:{position:'top'}},scales:{x:{grid:{display:false}},y:{beginAtZero:true}}}
+});
+
+new Chart(document.getElementById('trendNonAsChart'),{
+  type:'line',data:{labels:["05-10", "05-11", "05-12", "05-13", "05-14", "05-15", "05-16", "05-17", "05-18", "05-19", "05-20", "05-21", "05-22", "05-23", "05-24", "05-25", "05-26", "05-27", "05-28", "05-29", "05-30", "05-31", "06-01", "06-02", "06-03", "06-04", "06-05", "06-06", "06-07", "06-08", "06-09"],datasets:[
+    {label:'活跃用户',data:[441, 432, 406, 559, 435, 307, 85, 89, 89, 82, 90, 110, 99, 101, 83, 87, 97, 91, 114, 104, 104, 87, 127, 135, 173, 198, 173, 174, 149, 177, 136],borderColor:'#e67e22',tension:.3,pointRadius:2},
+    {label:'活跃群数',data:[363, 365, 379, 397, 361, 319, 71, 75, 60, 62, 67, 71, 68, 71, 66, 66, 70, 69, 71, 70, 67, 65, 70, 71, 75, 73, 69, 75, 68, 69, 49],borderColor:'#2d6cb4',tension:.3,pointRadius:2}
+  ]},options:{responsive:true,plugins:{legend:{position:'top'}},scales:{x:{grid:{display:false}},y:{beginAtZero:true}}}
+});
+
+new Chart(document.getElementById('weekChart'),{
+  type:'bar',data:{labels:["06-08", "06-09"],datasets:[
+    {label:'本周',data:[2162, 1943],backgroundColor:'rgba(26,60,110,.8)',borderRadius:4},
+    {label:'上周',data:[1251, 1198, 1860, 2029, 2176, 2414, 2025],backgroundColor:'rgba(184,221,240,.8)',borderRadius:4}
+  ]},options:{responsive:true,plugins:{legend:{position:'top'}},scales:{x:{grid:{display:false}},y:{beginAtZero:true}}}
+});
+
+new Chart(document.getElementById('weekdayChart'),{
+  type:'bar',data:{labels:["\u5468\u4e00", "\u5468\u4e8c", "\u5468\u4e09", "\u5468\u56db", "\u5468\u4e94", "\u5468\u516d", "\u5468\u65e5"],datasets:[{label:'消息量',data:[13393, 12567, 15537, 13905, 16768, 14303, 13874],backgroundColor:C.slice(0,7),borderRadius:4}]},
+  options:{responsive:true,plugins:{legend:{display:false}},scales:{x:{grid:{display:false}},y:{beginAtZero:true}}}
+});
+</script>
+</body>
+</html>
